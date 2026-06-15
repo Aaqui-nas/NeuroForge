@@ -260,8 +260,8 @@
     "semantic_hash": ""
   },
   ".github/workflows/ci.yml": {
-    "mtime": 1781560850.8021853,
-    "ast_hash": "4eb3c9b5b896bee486fa50b7e2350bfd",
+    "mtime": 1781561466.8198535,
+    "ast_hash": "55083163be911f2823abb386acdd725f",
     "semantic_hash": ""
   },
   ".pre-commit-config.yaml": {
