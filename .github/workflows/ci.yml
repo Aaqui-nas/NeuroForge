@@ -50,14 +50,22 @@ jobs:
         with:
           enable-cache: true
 
+      - name: Install PySide6 system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y --no-install-recommends \
+            libegl1 \
+            libgl1 \
+            libglib2.0-0 \
+            libxkbcommon-x11-0 \
+            libdbus-1-3
+
       - name: Install dev dependencies
         run: uv sync --group dev
 
-      - name: Create reports directory
-        run: mkdir -p reports htmlcov
-
       - name: Run tests with coverage
         run: |
+          mkdir -p reports htmlcov
           uv run pytest \
             --cov \
             --cov-report=html:htmlcov \
@@ -67,7 +75,7 @@ jobs:
         env:
           QT_QPA_PLATFORM: offscreen
 
-      - name: Upload test reports artifact
+      - name: Upload test reports
         uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -107,7 +115,12 @@ jobs:
   publish:
     name: Publish docs & reports
     needs: [lint, test-python, test-cpp]
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    # Toujours publier sur main, même si les jobs précédents ont échoué
+    # (sauf annulation manuelle du workflow)
+    if: |
+      always() &&
+      needs.test-python.result != 'cancelled' &&
+      (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -127,16 +140,29 @@ jobs:
         with:
           name: test-reports
           path: _artifacts/
+        continue-on-error: true
 
       - name: Build MkDocs site
         run: uv run mkdocs build --strict
 
-      - name: Copy reports into site
+      - name: Copy coverage report into site
         run: |
-          cp -r _artifacts/htmlcov  site/coverage
-          cp -r _artifacts/reports  site/reports
+          if [ -d "_artifacts/htmlcov" ]; then
+            cp -r _artifacts/htmlcov site/coverage
+          else
+            mkdir -p site/coverage
+            echo "<p>Coverage report not available for this run.</p>" > site/coverage/index.html
+          fi
 
-      # graphify: try to regenerate, fall back to committed version if unavailable
+      - name: Copy test report into site
+        run: |
+          if [ -d "_artifacts/reports" ]; then
+            cp -r _artifacts/reports site/reports
+          else
+            mkdir -p site/reports
+            echo "<p>Test report not available for this run.</p>" > site/reports/index.html
+          fi
+
       - name: Install graphify
         run: pip install graphify
         continue-on-error: true
