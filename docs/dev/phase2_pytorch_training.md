@@ -19,7 +19,7 @@ Chaque type de noeud a une fonction `propagate_shape(input_shapes, params) → o
 
 Exemples :
 - `Linear(in_features, out_features)` : `(B, in_features) → (B, out_features)`
-- `Conv2d(in_ch, out_ch, kernel_size, stride, padding)` : `(B, C, H, W) → (B, out_ch, H', W')`  
+- `Conv2d(in_ch, out_ch, kernel_size, stride, padding)` : `(B, C, H, W) → (B, out_ch, H', W')`
   formule H' = floor((H + 2*padding - kernel_size) / stride + 1)
 - `Flatten()` : `(B, C, H, W) → (B, C*H*W)`
 
@@ -36,7 +36,7 @@ Exemples :
 Convertir un `Graph` en un `nn.Module` PyTorch valide (code Python).
 
 ### Approche : génération de texte (string-based)
-Générer du code Python lisible plutôt qu'un AST.  
+Générer du code Python lisible plutôt qu'un AST.
 Avantage : debuggable par l'utilisateur.
 
 ### Algorithme

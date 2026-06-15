@@ -193,7 +193,7 @@ NodeDefinition:
 ```
 
 ### Registre
-Un `NodeRegistry` singleton (ou dict global) qui mappe `type → NodeDefinition`.  
+Un `NodeRegistry` singleton (ou dict global) qui mappe `type → NodeDefinition`.
 Permettra d'ajouter des noeuds custom plus tard via plugins.
 
 ---

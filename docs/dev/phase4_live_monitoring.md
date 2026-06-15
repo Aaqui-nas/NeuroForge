@@ -61,7 +61,7 @@ HookManager:
 Buffer lock-free entre le process d'entraînement et l'UI pour les métriques en temps réel.
 
 ### Pourquoi C++ ?
-`multiprocessing.Queue` de Python a de la latence et de l'overhead de sérialisation.  
+`multiprocessing.Queue` de Python a de la latence et de l'overhead de sérialisation.
 Un ring buffer en mémoire partagée est beaucoup plus rapide pour du streaming de scalaires.
 
 ### Design

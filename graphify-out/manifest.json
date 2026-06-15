@@ -1,0 +1,252 @@
+{
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/cpp/metrics/bindings.cpp": {
+    "mtime": 1781557737.0427246,
+    "ast_hash": "1ac13ff02e367a0459dc9cf942134e69",
+    "semantic_hash": "1ac13ff02e367a0459dc9cf942134e69"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/cpp/storage/bindings.cpp": {
+    "mtime": 1781557731.4122188,
+    "ast_hash": "c43cf0e890be50a05ce7eddf02c49a38",
+    "semantic_hash": "c43cf0e890be50a05ce7eddf02c49a38"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/core/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/datasets/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/graph/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/storage/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/tracking/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/training/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/ui/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/neuroforge/visualization/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/__init__.py": {
+    "mtime": 1781557577.361679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/conftest.py": {
+    "mtime": 1781557581.8016803,
+    "ast_hash": "c2c2a8aa02f5370bb6e638087cde7b5c",
+    "semantic_hash": "c2c2a8aa02f5370bb6e638087cde7b5c"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/integration/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/unit/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/unit/core/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/unit/datasets/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/unit/graph/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/unit/storage/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/unit/tracking/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/unit/training/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/unit/visualization/__init__.py": {
+    "mtime": 1781557577.362679,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/CLAUDE.md": {
+    "mtime": 1781558411.4370728,
+    "ast_hash": "0b5e2d8c997f64f2548b208b449f3ecc",
+    "semantic_hash": "0b5e2d8c997f64f2548b208b449f3ecc"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/CMakeLists.txt": {
+    "mtime": 1781557549.6916711,
+    "ast_hash": "8703ae0378a1d1c1fbc93deef60afbdb",
+    "semantic_hash": "8703ae0378a1d1c1fbc93deef60afbdb"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/README.md": {
+    "mtime": 1781558255.7670276,
+    "ast_hash": "c96f1422e481582f48422a4477b06c7e",
+    "semantic_hash": "c96f1422e481582f48422a4477b06c7e"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/core.md": {
+    "mtime": 1781558355.423203,
+    "ast_hash": "455257bd0b4559cc0494cdc2e0939021",
+    "semantic_hash": "455257bd0b4559cc0494cdc2e0939021"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/datasets.md": {
+    "mtime": 1781558355.4234226,
+    "ast_hash": "012a7f6f51b83598de47c5555a85ba13",
+    "semantic_hash": "012a7f6f51b83598de47c5555a85ba13"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/graph.md": {
+    "mtime": 1781558355.423335,
+    "ast_hash": "73a8971e860d5ec94752fbe2d62af1d9",
+    "semantic_hash": "73a8971e860d5ec94752fbe2d62af1d9"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/index.md": {
+    "mtime": 1781558295.74171,
+    "ast_hash": "bf52d8687b41bac2eae96b5d100a86fb",
+    "semantic_hash": "bf52d8687b41bac2eae96b5d100a86fb"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/storage.md": {
+    "mtime": 1781558355.423496,
+    "ast_hash": "eab12fdaaa2668bafe0ad1cbd4421403",
+    "semantic_hash": "eab12fdaaa2668bafe0ad1cbd4421403"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/tracking.md": {
+    "mtime": 1781558355.423457,
+    "ast_hash": "413a30c04ae427a992091ed5932aa1d3",
+    "semantic_hash": "413a30c04ae427a992091ed5932aa1d3"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/training.md": {
+    "mtime": 1781558355.4233868,
+    "ast_hash": "e71f09138aaff172a597f42a23976c8d",
+    "semantic_hash": "e71f09138aaff172a597f42a23976c8d"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/ui.md": {
+    "mtime": 1781558355.4235868,
+    "ast_hash": "473a14a5a711c75aaa83448a8c6c748f",
+    "semantic_hash": "473a14a5a711c75aaa83448a8c6c748f"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/api/visualization.md": {
+    "mtime": 1781558355.423547,
+    "ast_hash": "e786765c7a6b7178191f36c2cd3abc66",
+    "semantic_hash": "e786765c7a6b7178191f36c2cd3abc66"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/dev/contributing.md": {
+    "mtime": 1781558363.0160902,
+    "ast_hash": "378bea3b4f9655022e394957b61eec99",
+    "semantic_hash": "378bea3b4f9655022e394957b61eec99"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/dev/phase0_init.md": {
+    "mtime": 1781557337.802167,
+    "ast_hash": "326cd4ceacf136aa05e2c38afcb65995",
+    "semantic_hash": "326cd4ceacf136aa05e2c38afcb65995"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/dev/phase1_project_graph.md": {
+    "mtime": 1781557390.7090468,
+    "ast_hash": "51a09687ffd43ae8c694350cf9f891a2",
+    "semantic_hash": "51a09687ffd43ae8c694350cf9f891a2"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/dev/phase2_pytorch_training.md": {
+    "mtime": 1781557425.3372734,
+    "ast_hash": "23b939e23b3fe3f6c383ccf513e751a7",
+    "semantic_hash": "23b939e23b3fe3f6c383ccf513e751a7"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/dev/phase3_versioning.md": {
+    "mtime": 1781557458.3326452,
+    "ast_hash": "1b76ccb6eab7079cd20ae9120d4e9e70",
+    "semantic_hash": "1b76ccb6eab7079cd20ae9120d4e9e70"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/dev/phase4_live_monitoring.md": {
+    "mtime": 1781557502.3476577,
+    "ast_hash": "3c0997159e4677e24040b518c727b9fa",
+    "semantic_hash": "3c0997159e4677e24040b518c727b9fa"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/dev/phase5_remote_execution.md": {
+    "mtime": 1781557530.110219,
+    "ast_hash": "a0528c978904b1b1538d21e34c50bc60",
+    "semantic_hash": "a0528c978904b1b1538d21e34c50bc60"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/dev/roadmap.md": {
+    "mtime": 1781557303.2496784,
+    "ast_hash": "5d5513ff66af617f26de619121242ae9",
+    "semantic_hash": "5d5513ff66af617f26de619121242ae9"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/guide/concepts.md": {
+    "mtime": 1781558289.3704827,
+    "ast_hash": "77935b52ba11ec9cbdb232f310dd19a6",
+    "semantic_hash": "77935b52ba11ec9cbdb232f310dd19a6"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/guide/quickstart.md": {
+    "mtime": 1781558271.3709743,
+    "ast_hash": "5e3bccb2b66abaf8d963752ddb9e5ee2",
+    "semantic_hash": "5e3bccb2b66abaf8d963752ddb9e5ee2"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/docs/index.md": {
+    "mtime": 1781558264.219072,
+    "ast_hash": "44065d22477af54668ff0a138204ba5a",
+    "semantic_hash": "44065d22477af54668ff0a138204ba5a"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/idea.md": {
+    "mtime": 1781556811.449113,
+    "ast_hash": "9c6d8b744a259a0bfb0327c9b304d13b",
+    "semantic_hash": "9c6d8b744a259a0bfb0327c9b304d13b"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/mkdocs.yml": {
+    "mtime": 1781558373.6088254,
+    "ast_hash": "8ae75f7f91fc077acf929ad4ba0fee4c",
+    "semantic_hash": "8ae75f7f91fc077acf929ad4ba0fee4c"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/cpp/metrics/CMakeLists.txt": {
+    "mtime": 1781557749.0836954,
+    "ast_hash": "a3e6169bd0f67e61bbc7ced28b1893ff",
+    "semantic_hash": "a3e6169bd0f67e61bbc7ced28b1893ff"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/src/cpp/storage/CMakeLists.txt": {
+    "mtime": 1781557744.4770818,
+    "ast_hash": "f832ec0b2261766054b263c80aaf3052",
+    "semantic_hash": "f832ec0b2261766054b263c80aaf3052"
+  },
+  "/home/paulfougeray/Dev/perso/NeuroForge/tests/cpp/CMakeLists.txt": {
+    "mtime": 1781557592.6266832,
+    "ast_hash": "6983f22ef34605139ff916e5c602f7dd",
+    "semantic_hash": "6983f22ef34605139ff916e5c602f7dd"
+  }
+}

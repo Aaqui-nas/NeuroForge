@@ -22,9 +22,13 @@ CMakeCache.txt
 .pytest_cache/
 .coverage
 htmlcov/
+reports/
 
 # mypy
 .mypy_cache/
+
+# MkDocs
+site/
 
 # IDE
 .vscode/

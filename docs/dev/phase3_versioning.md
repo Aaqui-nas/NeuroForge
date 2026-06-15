@@ -99,7 +99,7 @@ ExperimentObject(NeuroForgeObject):
 ```
 
 ### Sérialisation
-Format : **MessagePack** (binaire, compact) ou JSON (debuggable).  
+Format : **MessagePack** (binaire, compact) ou JSON (debuggable).
 Recommandation : JSON encodé en UTF-8, stocké tel quel dans l'object store.
 
 ---
@@ -125,7 +125,7 @@ Recommandation : JSON encodé en UTF-8, stocké tel quel dans l'object store.
 ```
 
 ### Refs
-Un ref est un fichier texte contenant un hash SHA256.  
+Un ref est un fichier texte contenant un hash SHA256.
 Analogie Git : `refs/heads/main` pointe sur un commit → ici pointe sur un `ExperimentObject`.
 
 ---
@@ -154,7 +154,7 @@ Snapshot:
 4. Mettre à jour la branche courante : écrire le hash du snapshot dans `refs/<branch>`
 
 ### Chaîne d'historique
-`snapshot_N.parent_hash = hash(snapshot_{N-1})`  
+`snapshot_N.parent_hash = hash(snapshot_{N-1})`
 Permet de remonter l'historique (comme `git log`).
 
 ---

@@ -1,0 +1,81 @@
+site_name: NeuroForge
+site_description: Visual neural network designer with PyTorch backend
+repo_url: https://github.com/your-username/NeuroForge
+repo_name: NeuroForge
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            show_symbol_type_heading: true
+            members_order: source
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+
+nav:
+  - Home: index.md
+  - Guide:
+    - Quick Start: guide/quickstart.md
+    - Concepts: guide/concepts.md
+  - API Reference:
+    - Overview: api/index.md
+    - core: api/core.md
+    - graph: api/graph.md
+    - training: api/training.md
+    - datasets: api/datasets.md
+    - tracking: api/tracking.md
+    - storage: api/storage.md
+    - visualization: api/visualization.md
+    - ui: api/ui.md
+  - Development:
+    - Roadmap: dev/roadmap.md
+    - Contributing: dev/contributing.md
+    - Phase 0 — Init: dev/phase0_init.md
+    - Phase 1 — Graph Editor: dev/phase1_project_graph.md
+    - Phase 2 — Training: dev/phase2_pytorch_training.md
+    - Phase 3 — Versioning: dev/phase3_versioning.md
+    - Phase 4 — Live Monitoring: dev/phase4_live_monitoring.md
+    - Phase 5 — Remote Execution: dev/phase5_remote_execution.md

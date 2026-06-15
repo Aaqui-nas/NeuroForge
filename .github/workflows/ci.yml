@@ -1,0 +1,168 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── 1. Lint & type check ──────────────────────────────────────────────────
+  lint:
+    name: Lint & type check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dev dependencies
+        run: uv sync --group dev
+
+      - name: ruff lint
+        run: uv run ruff check src/ tests/
+
+      - name: ruff format
+        run: uv run ruff format --check src/ tests/
+
+      - name: mypy
+        run: uv run mypy src/
+
+  # ── 2. Python tests + coverage ────────────────────────────────────────────
+  test-python:
+    name: Python tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dev dependencies
+        run: uv sync --group dev
+
+      - name: Create reports directory
+        run: mkdir -p reports htmlcov
+
+      - name: Run tests with coverage
+        run: |
+          uv run pytest \
+            --cov \
+            --cov-report=html:htmlcov \
+            --cov-report=xml:reports/coverage.xml \
+            --cov-report=term-missing \
+            -v
+        env:
+          QT_QPA_PLATFORM: offscreen
+
+      - name: Upload test reports artifact
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-reports
+          path: |
+            reports/
+            htmlcov/
+          retention-days: 30
+
+  # ── 3. C++ tests ──────────────────────────────────────────────────────────
+  test-cpp:
+    name: C++ tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install build dependencies
+        run: sudo apt-get install -y cmake g++ clang-format
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install Python deps (pybind11 headers)
+        run: uv sync
+
+      - name: Configure CMake
+        run: cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+
+      - name: Build
+        run: cmake --build build --parallel
+
+      - name: Run C++ tests
+        run: cd build && ctest --output-on-failure
+
+  # ── 4. Deploy docs + reports to GitHub Pages ──────────────────────────────
+  publish:
+    name: Publish docs & reports
+    needs: [lint, test-python, test-cpp]
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+
+      - name: Install dev dependencies
+        run: uv sync --group dev
+
+      - name: Download test reports
+        uses: actions/download-artifact@v4
+        with:
+          name: test-reports
+          path: _artifacts/
+
+      - name: Build MkDocs site
+        run: uv run mkdocs build --strict
+
+      - name: Copy reports into site
+        run: |
+          cp -r _artifacts/htmlcov  site/coverage
+          cp -r _artifacts/reports  site/reports
+
+      # graphify: try to regenerate, fall back to committed version if unavailable
+      - name: Install graphify
+        run: pip install graphify
+        continue-on-error: true
+
+      - name: Regenerate knowledge graph
+        run: graphify update .
+        continue-on-error: true
+
+      - name: Publish knowledge graph
+        run: |
+          if [ -d "graphify-out" ]; then
+            mkdir -p site/graph
+            cp -r graphify-out/. site/graph/
+            echo "Graph published ($(ls graphify-out | wc -l) files)"
+          else
+            echo "No graphify-out directory found, skipping graph publication"
+          fi
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+      - id: deploy
+        name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

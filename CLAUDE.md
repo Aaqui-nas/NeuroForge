@@ -87,12 +87,31 @@ CMakeLists.txt
 pyproject.toml
 ```
 
+## Documentation
+
+Générée avec MkDocs + Material + mkdocstrings.
+
+```bash
+uv run mkdocs serve   # serveur local sur http://localhost:8000
+uv run mkdocs build   # génère le site statique dans site/
+```
+
 ## Références
 
-- [Roadmap complète](docs/roadmap.md)
-- [Phase 0 — Initialisation du projet](docs/phase0_init.md)
-- [Phase 1 — Projet & Éditeur de graphe](docs/phase1_project_graph.md)
-- [Phase 2 — Génération PyTorch & Entraînement](docs/phase2_pytorch_training.md)
-- [Phase 3 — Système de versioning](docs/phase3_versioning.md)
-- [Phase 4 — Monitoring live du graphe](docs/phase4_live_monitoring.md)
-- [Phase 5 — Exécution distante](docs/phase5_remote_execution.md)
+- [Roadmap complète](docs/dev/roadmap.md)
+- [Phase 0 — Initialisation du projet](docs/dev/phase0_init.md)
+- [Phase 1 — Projet & Éditeur de graphe](docs/dev/phase1_project_graph.md)
+- [Phase 2 — Génération PyTorch & Entraînement](docs/dev/phase2_pytorch_training.md)
+- [Phase 3 — Système de versioning](docs/dev/phase3_versioning.md)
+- [Phase 4 — Monitoring live du graphe](docs/dev/phase4_live_monitoring.md)
+- [Phase 5 — Exécution distante](docs/dev/phase5_remote_execution.md)
+
+## graphify
+
+This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
+
+Rules:
+- For codebase questions, first run `graphify query "<question>"` when graphify-out/graph.json exists. Use `graphify path "<A>" "<B>"` for relationships and `graphify explain "<concept>"` for focused concepts. These return a scoped subgraph, usually much smaller than GRAPH_REPORT.md or raw grep output.
+- If graphify-out/wiki/index.md exists, use it for broad navigation instead of raw source browsing.
+- Read graphify-out/GRAPH_REPORT.md only for broad architecture review or when query/path/explain do not surface enough context.
+- After modifying code, run `graphify update .` to keep the graph current (AST-only, no API cost).
