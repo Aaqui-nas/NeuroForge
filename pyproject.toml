@@ -36,7 +36,7 @@ python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 pythonpath = ["src"]
-addopts = "--html=reports/test-report.html --self-contained-html"
+addopts = "--html=reports/test-report.html --self-contained-html --css=assets/styles/pytest-report.css"
 
 [tool.ruff]
 line-length = 100

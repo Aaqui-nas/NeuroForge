@@ -1,0 +1,42 @@
+/*
+ * NeuroForge Design System — valeurs exactes du thème Material slate + deep purple
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+:root {
+  --md-hue: 225;
+
+  /* Backgrounds — slate scheme */
+  --nf-bg:        hsla(225, 15%, 14%, 1);
+  --nf-surface:   hsla(225, 15%, 17%, 1);
+  --nf-surface-2: hsla(225, 15%, 21%, 1);
+  --nf-surface-3: hsla(225, 15%, 26%, 1);
+
+  /* Texte */
+  --nf-text:        hsla(225, 15%, 95%, 1);
+  --nf-text-muted:  hsla(225, 15%, 90%, 0.54);
+  --nf-text-faint:  hsla(225, 15%, 90%, 0.32);
+
+  /* Bordures */
+  --nf-border:   hsla(225, 15%, 90%, 0.12);
+  --nf-border-2: hsla(225, 15%, 90%, 0.32);
+
+  /* Brand — deep purple */
+  --nf-primary:     #7e56c2;
+  --nf-primary-dim: hsla(225, 15%, 90%, 0.12);
+
+  /* Liens = même couleur que le primary */
+  --nf-link: #7e56c2;
+
+  /* Sémantique */
+  --nf-success: #4caf50;
+  --nf-error:   #ef5350;
+  --nf-warning: #ff9800;
+  --nf-skipped: hsla(225, 15%, 90%, 0.54);
+
+  /* Typo */
+  --nf-font:      'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  --nf-font-mono: 'Roboto Mono', 'Fira Code', monospace;
+  --nf-radius:    4px;
+}

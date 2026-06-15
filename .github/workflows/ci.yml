@@ -75,6 +75,10 @@ jobs:
         env:
           QT_QPA_PLATFORM: offscreen
 
+      - name: Apply NeuroForge theme to coverage report
+        run: uv run python scripts/theme_reports.py htmlcov
+        if: always()
+
       - name: Upload test reports
         uses: actions/upload-artifact@v4
         if: always()
@@ -169,6 +173,10 @@ jobs:
 
       - name: Regenerate knowledge graph
         run: graphify update .
+        continue-on-error: true
+
+      - name: Apply NeuroForge theme to graph
+        run: uv run python scripts/theme_reports.py graphify-out
         continue-on-error: true
 
       - name: Publish knowledge graph

@@ -9,6 +9,7 @@ test:
 
 cov:
 	uv run pytest --cov --cov-report=term-missing --cov-report=html:htmlcov -q
+	uv run python scripts/theme_reports.py htmlcov
 	@echo "Coverage report: htmlcov/index.html"
 
 lint:

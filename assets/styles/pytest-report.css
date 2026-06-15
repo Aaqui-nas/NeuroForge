@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* ── Variables (hue 225 per actual MkDocs theme) ── */
+:root {
+  --nf-hue:       225;
+  --nf-bg:        hsla(225, 15%, 14%, 1);
+  --nf-surface:   hsla(225, 15%, 17%, 1);
+  --nf-surface-2: hsla(225, 15%, 21%, 1);
+  --nf-surface-3: hsla(225, 15%, 26%, 1);
+  --nf-text:        hsla(225, 15%, 95%, 1);
+  --nf-text-muted:  hsla(225, 15%, 90%, 0.54);
+  --nf-text-faint:  hsla(225, 15%, 90%, 0.32);
+  --nf-border:      hsla(225, 15%, 90%, 0.12);
+  --nf-border-2:    hsla(225, 15%, 90%, 0.32);
+  --nf-primary:     #7e56c2;
+  --nf-link:        #7e56c2;
+  --nf-success:     #4caf50;
+  --nf-error:       #ef5350;
+  --nf-warning:     #ff9800;
+  --nf-font:        'Roboto', -apple-system, sans-serif;
+  --nf-font-mono:   'Roboto Mono', 'Courier New', monospace;
+}
+
+/* ── Reset defaults (pytest-html sets color: black on h1/h2/p) ── */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  background: var(--nf-bg) !important;
+  color: var(--nf-text) !important;
+  font-family: var(--nf-font) !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+  margin: 0 !important;
+  min-width: unset !important;
+}
+
+h1, h2, h3, h4 { color: var(--nf-text) !important; }
+p { color: var(--nf-text) !important; }
+a { color: var(--nf-link) !important; text-decoration: none !important; }
+a:hover { opacity: 0.8 !important; text-decoration: underline !important; }
+
+/* ── Faux header : h1#title + first p act as the Material top bar ── */
+h1#title {
+  background: var(--nf-primary) !important;
+  color: #fff !important;
+  margin: 0 !important;
+  padding: 0.9rem 1.5rem 0.5rem !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* "Report generated on ... by pytest-html v4.2.0" */
+body > p {
+  background: var(--nf-primary) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+  margin: 0 !important;
+  padding: 0 1.5rem 0.75rem !important;
+  font-size: 0.78rem !important;
+  border-bottom: none !important;
+}
+
+body > p a { color: rgba(255, 255, 255, 0.87) !important; }
+
+/* ── Environment section ── */
+#environment-header {
+  padding: 0.6rem 1.5rem !important;
+  border-bottom: 1px solid var(--nf-border) !important;
+  background: var(--nf-surface) !important;
+  cursor: pointer !important;
+}
+
+#environment-header h2 {
+  color: var(--nf-text-muted) !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin: 0 !important;
+}
+
+#environment-header h2:hover::after {
+  color: var(--nf-text-muted) !important;
+  font-style: italic !important;
+}
+
+table#environment {
+  margin: 1rem 1.5rem !important;
+  border: 1px solid var(--nf-border) !important;
+  background: var(--nf-surface) !important;
+}
+
+#environment td {
+  background: transparent !important;
+  color: var(--nf-text) !important;
+  border: 1px solid var(--nf-border) !important;
+  padding: 0.4rem 0.75rem !important;
+  font-family: var(--nf-font-mono) !important;
+  font-size: 0.82rem !important;
+  vertical-align: top !important;
+}
+
+#environment tr:nth-child(odd) td {
+  background-color: var(--nf-surface-2) !important;
+}
+
+#environment ul {
+  color: var(--nf-text-muted) !important;
+  margin: 0 !important;
+  padding: 0 1rem !important;
+}
+
+/* ── Summary ── */
+.summary {
+  padding: 1rem 1.5rem !important;
+}
+
+.summary__data h2 {
+  color: var(--nf-text-muted) !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  margin: 0 0 0.5rem !important;
+}
+
+p.run-count {
+  color: var(--nf-text) !important;
+  font-size: 0.9rem !important;
+  margin: 0.25rem 0 !important;
+}
+
+p.filter {
+  color: var(--nf-text-muted) !important;
+  font-size: 0.82rem !important;
+  margin: 0.1rem 0 0.75rem !important;
+}
+
+/* ── Controls bar ── */
+.controls {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0.5rem 0 !important;
+  border-top: 1px solid var(--nf-border) !important;
+  border-bottom: 1px solid var(--nf-border) !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.filters, .collapse {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.25rem !important;
+  flex-wrap: wrap !important;
+}
+
+.filters button, .collapse button {
+  color: var(--nf-link) !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-size: 0.82rem !important;
+  text-decoration: underline !important;
+  padding: 0 !important;
+}
+
+/* Filter status spans */
+span.passed  { color: var(--nf-success) !important; font-size: 0.82rem !important; }
+span.failed  { color: var(--nf-error)   !important; font-size: 0.82rem !important; }
+span.error   { color: var(--nf-error)   !important; font-size: 0.82rem !important; }
+span.skipped { color: var(--nf-warning) !important; font-size: 0.82rem !important; }
+span.xfailed { color: var(--nf-warning) !important; font-size: 0.82rem !important; }
+span.xpassed { color: var(--nf-success) !important; font-size: 0.82rem !important; }
+span.rerun   { color: var(--nf-warning) !important; font-size: 0.82rem !important; }
+
+input[type="checkbox"] { accent-color: var(--nf-primary) !important; }
+
+/* ── Results table ── */
+#results-table {
+  border: 1px solid var(--nf-border) !important;
+  color: var(--nf-text) !important;
+  font-size: 0.875rem !important;
+  background: var(--nf-surface) !important;
+}
+
+#results-table th,
+#results-table td {
+  border: 1px solid var(--nf-border) !important;
+  padding: 0.5rem 1rem !important;
+  color: var(--nf-text) !important;
+  text-align: left !important;
+}
+
+#results-table th {
+  background: var(--nf-surface-2) !important;
+  border-bottom: 2px solid var(--nf-primary) !important;
+  color: var(--nf-text-muted) !important;
+  font-size: 0.72rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.08em !important;
+  font-weight: 500 !important;
+}
+
+/* Row hover */
+#results-table tr.collapsible:hover td {
+  background: hsla(225, 15%, 90%, 0.06) !important;
+  cursor: pointer !important;
+}
+
+/* Result status colours */
+.passed  .col-result { color: var(--nf-success) !important; font-weight: 500 !important; }
+.failed  .col-result { color: var(--nf-error)   !important; font-weight: 500 !important; }
+.error   .col-result { color: var(--nf-error)   !important; font-weight: 500 !important; }
+.skipped .col-result { color: var(--nf-warning) !important; }
+.xfailed .col-result { color: var(--nf-warning) !important; }
+.xpassed .col-result { color: var(--nf-success) !important; font-weight: 500 !important; }
+.rerun   .col-result { color: var(--nf-warning) !important; }
+
+/* Row tint */
+tr.passed  { background: rgba(76,  175, 80,  0.05) !important; }
+tr.failed  { background: rgba(239,  83, 80,  0.07) !important; }
+tr.error   { background: rgba(239,  83, 80,  0.07) !important; }
+
+/* Test ID column */
+.col-testId {
+  font-family: var(--nf-font-mono) !important;
+  font-size: 0.82rem !important;
+  color: var(--nf-link) !important;
+}
+
+/* Duration column */
+.col-duration {
+  color: var(--nf-text-muted) !important;
+  font-size: 0.82rem !important;
+  white-space: nowrap !important;
+}
+
+/* ── Sort arrows (were #4caf50, now primary) ── */
+.sortable.desc:after {
+  border-color: var(--nf-primary) transparent transparent transparent !important;
+}
+.sortable.asc:after {
+  border-color: var(--nf-primary) transparent transparent transparent !important;
+}
+
+/* ── Log / traceback ── */
+.logwrapper {
+  background: var(--nf-surface-2) !important;
+  max-height: 230px !important;
+  overflow-y: scroll !important;
+}
+
+.logwrapper .log {
+  background: var(--nf-surface-2) !important;
+  border: 1px solid var(--nf-border) !important;
+  color: var(--nf-text) !important;
+  font-family: var(--nf-font-mono) !important;
+  font-size: 0.8rem !important;
+  border-left: 3px solid var(--nf-primary) !important;
+  white-space: pre-wrap !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.logwrapper .logexpander {
+  background: var(--nf-surface-3) !important;
+  border-color: var(--nf-border-2) !important;
+  color: var(--nf-text-muted) !important;
+}
+
+.logwrapper .logexpander:hover {
+  color: var(--nf-text) !important;
+  border-color: var(--nf-primary) !important;
+}
+
+/* Error lines in log */
+.log span.error { color: var(--nf-error) !important; }
+
+/* ── Reload button ── */
+.summary__reload__button {
+  background-color: var(--nf-primary) !important;
+  border-radius: 4px !important;
+}
+.summary__reload__button:hover {
+  opacity: 0.85 !important;
+  background-color: var(--nf-primary) !important;
+}
+
+/* ── Footer / hidden elements ── */
+footer { display: none !important; }
+.hidden { display: none !important; }
