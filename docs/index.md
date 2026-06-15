@@ -37,3 +37,22 @@ No web browser. No cloud. A native desktop application.
   Development plan — phases and current status
 
 </div>
+
+---
+
+## CI Reports
+
+Generated on every push to `main`.
+
+<div class="grid cards" markdown>
+
+- :material-test-tube: **[Test Report](reports/test-report.html)**
+  Full pytest journal — passed, failed, skipped
+
+- :material-percent: **[Coverage Report](coverage/index.html)**
+  Line-by-line coverage across all modules
+
+- :material-graph: **[Knowledge Graph](graph/graph.html)**
+  Codebase structure — nodes, communities, cross-file relationships
+
+</div>
