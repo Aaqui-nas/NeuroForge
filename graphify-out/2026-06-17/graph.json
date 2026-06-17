@@ -103,410 +103,270 @@
   },
   "nodes": [
     {
-      "label": "model.py",
+      "label": "serializer.py",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
+      "source_file": "src/neuroforge/graph/serializer.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "graph_model",
-      "community": 37,
-      "norm_label": "model.py"
+      "id": "graph_serializer",
+      "community": 56,
+      "norm_label": "serializer.py"
     },
     {
-      "label": "PortDirection",
+      "label": "_to_serializable()",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
+      "source_file": "src/neuroforge/graph/serializer.py",
       "source_location": "L14",
       "_origin": "ast",
-      "id": "graph_model_portdirection",
-      "community": 37,
-      "norm_label": "portdirection"
+      "id": "graph_serializer_to_serializable",
+      "community": 54,
+      "norm_label": "_to_serializable()"
     },
     {
-      "label": "Enum",
+      "label": "Any",
       "file_type": "code",
-      "source_file": "",
-      "source_location": "",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L14",
       "_origin": "ast",
-      "id": "enum",
-      "community": 37,
-      "norm_label": "enum"
+      "id": "any",
+      "community": 54,
+      "norm_label": "any"
     },
     {
-      "label": "DataType",
+      "label": "GraphSerializer",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L21",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L25",
       "_origin": "ast",
-      "id": "graph_model_datatype",
-      "community": 37,
-      "norm_label": "datatype"
+      "id": "graph_serializer_graphserializer",
+      "community": 54,
+      "norm_label": "graphserializer"
     },
     {
-      "label": "Port",
+      "label": ".to_dict()",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L32",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L34",
       "_origin": "ast",
-      "id": "graph_model_port",
-      "community": 37,
-      "norm_label": "port"
-    },
-    {
-      "label": "Node",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L51",
-      "_origin": "ast",
-      "id": "graph_model_node",
-      "community": 4,
-      "norm_label": "node"
-    },
-    {
-      "label": "Edge",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L72",
-      "_origin": "ast",
-      "id": "graph_model_edge",
-      "community": 37,
-      "norm_label": "edge"
+      "id": "graph_serializer_graphserializer_to_dict",
+      "community": 54,
+      "norm_label": ".to_dict()"
     },
     {
       "label": "Graph",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L91",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L34",
       "_origin": "ast",
-      "id": "graph_model_graph",
-      "community": 52,
+      "id": "src_neuroforge_graph_serializer_py_graph",
+      "community": 54,
       "norm_label": "graph"
     },
     {
-      "label": ".add_node()",
+      "label": ".from_dict()",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L102",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L50",
       "_origin": "ast",
-      "id": "graph_model_graph_add_node",
-      "community": 4,
-      "norm_label": ".add_node()"
+      "id": "graph_serializer_graphserializer_from_dict",
+      "community": 54,
+      "norm_label": ".from_dict()"
     },
     {
-      "label": ".remove_node()",
+      "label": ".save()",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L111",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L74",
       "_origin": "ast",
-      "id": "graph_model_graph_remove_node",
-      "community": 52,
-      "norm_label": ".remove_node()"
+      "id": "graph_serializer_graphserializer_save",
+      "community": 54,
+      "norm_label": ".save()"
     },
     {
-      "label": "NodeId",
+      "label": "Path",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L111",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L74",
       "_origin": "ast",
-      "id": "nodeid",
-      "community": 52,
-      "norm_label": "nodeid"
+      "id": "src_neuroforge_graph_serializer_py_path",
+      "community": 54,
+      "norm_label": "path"
     },
     {
-      "label": "EdgeId",
+      "label": ".load()",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L111",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L87",
       "_origin": "ast",
-      "id": "edgeid",
-      "community": 52,
-      "norm_label": "edgeid"
+      "id": "graph_serializer_graphserializer_load",
+      "community": 54,
+      "norm_label": ".load()"
     },
     {
-      "label": ".add_edge()",
+      "label": "._migrate()",
       "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L131",
-      "_origin": "ast",
-      "id": "graph_model_graph_add_edge",
-      "community": 37,
-      "norm_label": ".add_edge()"
-    },
-    {
-      "label": ".remove_edge()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L140",
-      "_origin": "ast",
-      "id": "graph_model_graph_remove_edge",
-      "community": 52,
-      "norm_label": ".remove_edge()"
-    },
-    {
-      "label": ".get_node()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L148",
-      "_origin": "ast",
-      "id": "graph_model_graph_get_node",
-      "community": 52,
-      "norm_label": ".get_node()"
-    },
-    {
-      "label": ".get_edge()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L156",
-      "_origin": "ast",
-      "id": "graph_model_graph_get_edge",
-      "community": 52,
-      "norm_label": ".get_edge()"
-    },
-    {
-      "label": ".edges_from()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L164",
-      "_origin": "ast",
-      "id": "graph_model_graph_edges_from",
-      "community": 52,
-      "norm_label": ".edges_from()"
-    },
-    {
-      "label": ".edges_to()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L172",
-      "_origin": "ast",
-      "id": "graph_model_graph_edges_to",
-      "community": 52,
-      "norm_label": ".edges_to()"
-    },
-    {
-      "label": ".topological_order()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L180",
-      "_origin": "ast",
-      "id": "graph_model_graph_topological_order",
-      "community": 52,
-      "norm_label": ".topological_order()"
-    },
-    {
-      "label": "Direction of a port on a node.",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L15",
-      "_origin": "ast",
-      "id": "graph_model_rationale_15",
-      "community": 37,
-      "norm_label": "direction of a port on a node."
-    },
-    {
-      "label": "Data type flowing through a port connection.",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "graph_model_rationale_22",
-      "community": 37,
-      "norm_label": "data type flowing through a port connection."
-    },
-    {
-      "label": "A typed connection point on a node.      Attributes:         id: Unique identifi",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L33",
-      "_origin": "ast",
-      "id": "graph_model_rationale_33",
-      "community": 37,
-      "norm_label": "a typed connection point on a node.      attributes:         id: unique identifi"
-    },
-    {
-      "label": "A single operation in the computation graph.      Attributes:         id: UUID s",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L52",
-      "_origin": "ast",
-      "id": "graph_model_rationale_52",
-      "community": 4,
-      "norm_label": "a single operation in the computation graph.      attributes:         id: uuid s"
-    },
-    {
-      "label": "A directed connection between two ports.      Attributes:         id: UUID strin",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L73",
-      "_origin": "ast",
-      "id": "graph_model_rationale_73",
-      "community": 37,
-      "norm_label": "a directed connection between two ports.      attributes:         id: uuid strin"
-    },
-    {
-      "label": "In-memory representation of the neural network computation graph (DAG).      Att",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L92",
-      "_origin": "ast",
-      "id": "graph_model_rationale_92",
-      "community": 52,
-      "norm_label": "in-memory representation of the neural network computation graph (dag).      att"
-    },
-    {
-      "label": "Add a node to the graph. Silently ignored if the id already exists.          Arg",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
+      "source_file": "src/neuroforge/graph/serializer.py",
       "source_location": "L103",
       "_origin": "ast",
-      "id": "graph_model_rationale_103",
-      "community": 4,
-      "norm_label": "add a node to the graph. silently ignored if the id already exists.          arg"
+      "id": "graph_serializer_graphserializer_migrate",
+      "community": 54,
+      "norm_label": "._migrate()"
     },
     {
-      "label": "Remove a node and all edges that reference it.          Args:             node_i",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L112",
-      "_origin": "ast",
-      "id": "graph_model_rationale_112",
-      "community": 52,
-      "norm_label": "remove a node and all edges that reference it.          args:             node_i"
-    },
-    {
-      "label": "Add an edge to the graph. Silently ignored if the id already exists.          Ar",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L132",
-      "_origin": "ast",
-      "id": "graph_model_rationale_132",
-      "community": 37,
-      "norm_label": "add an edge to the graph. silently ignored if the id already exists.          ar"
-    },
-    {
-      "label": "Remove an edge. No-op if the edge does not exist.          Args:             edg",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L141",
-      "_origin": "ast",
-      "id": "graph_model_rationale_141",
-      "community": 52,
-      "norm_label": "remove an edge. no-op if the edge does not exist.          args:             edg"
-    },
-    {
-      "label": "Return the node for the given id, or None if not found.          Args:",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L149",
-      "_origin": "ast",
-      "id": "graph_model_rationale_149",
-      "community": 52,
-      "norm_label": "return the node for the given id, or none if not found.          args:"
-    },
-    {
-      "label": "Return the edge for the given id, or None if not found.          Args:",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L157",
-      "_origin": "ast",
-      "id": "graph_model_rationale_157",
-      "community": 52,
-      "norm_label": "return the edge for the given id, or none if not found.          args:"
-    },
-    {
-      "label": "Return all edges whose source is the given node.          Args:             node",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L165",
-      "_origin": "ast",
-      "id": "graph_model_rationale_165",
-      "community": 52,
-      "norm_label": "return all edges whose source is the given node.          args:             node"
-    },
-    {
-      "label": "Return all edges whose destination is the given node.          Args:",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L173",
-      "_origin": "ast",
-      "id": "graph_model_rationale_173",
-      "community": 52,
-      "norm_label": "return all edges whose destination is the given node.          args:"
-    },
-    {
-      "label": "Return node IDs in topological order using Kahn's algorithm (BFS).          Retu",
-      "file_type": "rationale",
-      "source_file": "src/neuroforge/graph/model.py",
-      "source_location": "L181",
-      "_origin": "ast",
-      "id": "graph_model_rationale_181",
-      "community": 52,
-      "norm_label": "return node ids in topological order using kahn's algorithm (bfs).          retu"
-    },
-    {
-      "label": "test_graph_model.py",
+      "label": "._port_from_dict()",
       "file_type": "code",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L1",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L118",
       "_origin": "ast",
-      "id": "unit_test_graph_model",
-      "community": 52,
-      "norm_label": "test_graph_model.py"
+      "id": "graph_serializer_graphserializer_port_from_dict",
+      "community": 54,
+      "norm_label": "._port_from_dict()"
     },
     {
-      "label": "make_node()",
+      "label": "Port",
       "file_type": "code",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L17",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L118",
       "_origin": "ast",
-      "id": "unit_test_graph_model_make_node",
-      "community": 52,
-      "norm_label": "make_node()"
+      "id": "src_neuroforge_graph_serializer_py_port",
+      "community": 54,
+      "norm_label": "port"
+    },
+    {
+      "label": "._node_from_dict()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L127",
+      "_origin": "ast",
+      "id": "graph_serializer_graphserializer_node_from_dict",
+      "community": 54,
+      "norm_label": "._node_from_dict()"
     },
     {
       "label": "Node",
       "file_type": "code",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L17",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L127",
       "_origin": "ast",
-      "id": "node",
-      "community": 37,
+      "id": "src_neuroforge_graph_serializer_py_node",
+      "community": 54,
       "norm_label": "node"
     },
     {
-      "label": "make_edge()",
+      "label": "._edge_from_dict()",
       "file_type": "code",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L28",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L138",
       "_origin": "ast",
-      "id": "unit_test_graph_model_make_edge",
-      "community": 52,
-      "norm_label": "make_edge()"
+      "id": "graph_serializer_graphserializer_edge_from_dict",
+      "community": 54,
+      "norm_label": "._edge_from_dict()"
     },
     {
       "label": "Edge",
       "file_type": "code",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L28",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L138",
       "_origin": "ast",
-      "id": "edge",
-      "community": 37,
+      "id": "src_neuroforge_graph_serializer_py_edge",
+      "community": 54,
       "norm_label": "edge"
+    },
+    {
+      "label": "Recursively convert Enum \u2192 int and tuple \u2192 list for JSON compatibility.",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "graph_serializer_rationale_15",
+      "community": 54,
+      "norm_label": "recursively convert enum \u2192 int and tuple \u2192 list for json compatibility."
+    },
+    {
+      "label": "Serializes and deserializes a `Graph` to/from JSON.      The JSON file format in",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "graph_serializer_rationale_26",
+      "community": 54,
+      "norm_label": "serializes and deserializes a `graph` to/from json.      the json file format in"
+    },
+    {
+      "label": "Convert a `Graph` to a JSON-serializable dict.          Enum values are stored a",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "graph_serializer_rationale_35",
+      "community": 54,
+      "norm_label": "convert a `graph` to a json-serializable dict.          enum values are stored a"
+    },
+    {
+      "label": "Reconstruct a `Graph` from a deserialized dict.          Calls `_migrate` automa",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "graph_serializer_rationale_51",
+      "community": 54,
+      "norm_label": "reconstruct a `graph` from a deserialized dict.          calls `_migrate` automa"
+    },
+    {
+      "label": "Write the graph to a JSON file.          Creates parent directories automaticall",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L75",
+      "_origin": "ast",
+      "id": "graph_serializer_rationale_75",
+      "community": 54,
+      "norm_label": "write the graph to a json file.          creates parent directories automaticall"
+    },
+    {
+      "label": "Load a graph from a JSON file.          Args:             path: Full path to the",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "graph_serializer_rationale_88",
+      "community": 54,
+      "norm_label": "load a graph from a json file.          args:             path: full path to the"
+    },
+    {
+      "label": "Upgrade ``data`` from an older schema version to `SCHEMA_VERSION`.          Add",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "graph_serializer_rationale_104",
+      "community": 54,
+      "norm_label": "upgrade ``data`` from an older schema version to `schema_version`.          add"
+    },
+    {
+      "label": "test_graph_serializer.py",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer",
+      "community": 54,
+      "norm_label": "test_graph_serializer.py"
     },
     {
       "label": "make_port()",
       "file_type": "code",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L38",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L21",
       "_origin": "ast",
-      "id": "unit_test_graph_model_make_port",
-      "community": 37,
+      "id": "unit_test_graph_serializer_make_port",
+      "community": 54,
       "norm_label": "make_port()"
     },
     {
       "label": "PortDirection",
       "file_type": "code",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L38",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "portdirection",
       "community": 37,
@@ -515,12 +375,722 @@
     {
       "label": "Port",
       "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "tests_unit_test_graph_serializer_py_port",
+      "community": 54,
+      "norm_label": "port"
+    },
+    {
+      "label": "make_node()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_make_node",
+      "community": 54,
+      "norm_label": "make_node()"
+    },
+    {
+      "label": "Node",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "tests_unit_test_graph_serializer_py_node",
+      "community": 54,
+      "norm_label": "node"
+    },
+    {
+      "label": "make_edge()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_make_edge",
+      "community": 54,
+      "norm_label": "make_edge()"
+    },
+    {
+      "label": "Edge",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "tests_unit_test_graph_serializer_py_edge",
+      "community": 54,
+      "norm_label": "edge"
+    },
+    {
+      "label": "make_graph()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_make_graph",
+      "community": 54,
+      "norm_label": "make_graph()"
+    },
+    {
+      "label": "Graph",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "tests_unit_test_graph_serializer_py_graph",
+      "community": 54,
+      "norm_label": "graph"
+    },
+    {
+      "label": "test_to_dict_contains_schema_version()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_to_dict_contains_schema_version",
+      "community": 54,
+      "norm_label": "test_to_dict_contains_schema_version()"
+    },
+    {
+      "label": "test_to_dict_contains_nodes_and_edges_keys()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L51",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_to_dict_contains_nodes_and_edges_keys",
+      "community": 54,
+      "norm_label": "test_to_dict_contains_nodes_and_edges_keys()"
+    },
+    {
+      "label": "test_to_dict_nodes_are_dicts_not_objects()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_to_dict_nodes_are_dicts_not_objects",
+      "community": 54,
+      "norm_label": "test_to_dict_nodes_are_dicts_not_objects()"
+    },
+    {
+      "label": "test_to_dict_edge_is_dict()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_to_dict_edge_is_dict",
+      "community": 54,
+      "norm_label": "test_to_dict_edge_is_dict()"
+    },
+    {
+      "label": "test_to_dict_enum_stored_as_int()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_to_dict_enum_stored_as_int",
+      "community": 54,
+      "norm_label": "test_to_dict_enum_stored_as_int()"
+    },
+    {
+      "label": "test_to_dict_position_stored_as_list()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_to_dict_position_stored_as_list",
+      "community": 54,
+      "norm_label": "test_to_dict_position_stored_as_list()"
+    },
+    {
+      "label": "test_from_dict_returns_graph()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_from_dict_returns_graph",
+      "community": 54,
+      "norm_label": "test_from_dict_returns_graph()"
+    },
+    {
+      "label": "test_from_dict_reconstructs_nodes()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_from_dict_reconstructs_nodes",
+      "community": 54,
+      "norm_label": "test_from_dict_reconstructs_nodes()"
+    },
+    {
+      "label": "test_from_dict_reconstructs_node_type()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_from_dict_reconstructs_node_type",
+      "community": 54,
+      "norm_label": "test_from_dict_reconstructs_node_type()"
+    },
+    {
+      "label": "test_from_dict_reconstructs_position_as_tuple()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L113",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_from_dict_reconstructs_position_as_tuple",
+      "community": 54,
+      "norm_label": "test_from_dict_reconstructs_position_as_tuple()"
+    },
+    {
+      "label": "test_from_dict_reconstructs_port_enums()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L121",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_from_dict_reconstructs_port_enums",
+      "community": 54,
+      "norm_label": "test_from_dict_reconstructs_port_enums()"
+    },
+    {
+      "label": "test_from_dict_reconstructs_edges()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_from_dict_reconstructs_edges",
+      "community": 54,
+      "norm_label": "test_from_dict_reconstructs_edges()"
+    },
+    {
+      "label": "test_from_dict_missing_schema_version_defaults_to_1()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_from_dict_missing_schema_version_defaults_to_1",
+      "community": 54,
+      "norm_label": "test_from_dict_missing_schema_version_defaults_to_1()"
+    },
+    {
+      "label": "test_roundtrip_node_count()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L148",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_roundtrip_node_count",
+      "community": 54,
+      "norm_label": "test_roundtrip_node_count()"
+    },
+    {
+      "label": "test_roundtrip_edge_count()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_roundtrip_edge_count",
+      "community": 54,
+      "norm_label": "test_roundtrip_edge_count()"
+    },
+    {
+      "label": "test_roundtrip_preserves_params()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L160",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_roundtrip_preserves_params",
+      "community": 54,
+      "norm_label": "test_roundtrip_preserves_params()"
+    },
+    {
+      "label": "test_roundtrip_preserves_port_required()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L167",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_roundtrip_preserves_port_required",
+      "community": 54,
+      "norm_label": "test_roundtrip_preserves_port_required()"
+    },
+    {
+      "label": "test_save_creates_file()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L177",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_save_creates_file",
+      "community": 54,
+      "norm_label": "test_save_creates_file()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L177",
+      "_origin": "ast",
+      "id": "tests_unit_test_graph_serializer_py_path",
+      "community": 54,
+      "norm_label": "path"
+    },
+    {
+      "label": "test_save_creates_parent_directories()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L184",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_save_creates_parent_directories",
+      "community": 54,
+      "norm_label": "test_save_creates_parent_directories()"
+    },
+    {
+      "label": "test_save_writes_valid_json()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L191",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_save_writes_valid_json",
+      "community": 54,
+      "norm_label": "test_save_writes_valid_json()"
+    },
+    {
+      "label": "test_load_raises_if_file_missing()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_load_raises_if_file_missing",
+      "community": 54,
+      "norm_label": "test_load_raises_if_file_missing()"
+    },
+    {
+      "label": "test_load_returns_graph()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L206",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_load_returns_graph",
+      "community": 54,
+      "norm_label": "test_load_returns_graph()"
+    },
+    {
+      "label": "test_save_load_roundtrip()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L213",
+      "_origin": "ast",
+      "id": "unit_test_graph_serializer_test_save_load_roundtrip",
+      "community": 54,
+      "norm_label": "test_save_load_roundtrip()"
+    },
+    {
+      "label": "model.py",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 56,
+      "norm_label": "model.py",
+      "id": "graph_model"
+    },
+    {
+      "label": "PortDirection",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "community": 56,
+      "norm_label": "portdirection",
+      "id": "graph_model_portdirection"
+    },
+    {
+      "label": "Enum",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "community": 56,
+      "norm_label": "enum",
+      "id": "enum"
+    },
+    {
+      "label": "DataType",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "community": 56,
+      "norm_label": "datatype",
+      "id": "graph_model_datatype"
+    },
+    {
+      "label": "Port",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "port",
+      "id": "graph_model_port"
+    },
+    {
+      "label": "Node",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L51",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "node",
+      "id": "graph_model_node"
+    },
+    {
+      "label": "Edge",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L72",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "edge",
+      "id": "graph_model_edge"
+    },
+    {
+      "label": "Graph",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L91",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "graph",
+      "id": "graph_model_graph"
+    },
+    {
+      "label": ".add_node()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L102",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".add_node()",
+      "id": "graph_model_graph_add_node"
+    },
+    {
+      "label": ".remove_node()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L111",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".remove_node()",
+      "id": "graph_model_graph_remove_node"
+    },
+    {
+      "label": "NodeId",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L111",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "nodeid",
+      "id": "nodeid"
+    },
+    {
+      "label": "EdgeId",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L111",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "edgeid",
+      "id": "edgeid"
+    },
+    {
+      "label": ".add_edge()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L131",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".add_edge()",
+      "id": "graph_model_graph_add_edge"
+    },
+    {
+      "label": ".remove_edge()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L140",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".remove_edge()",
+      "id": "graph_model_graph_remove_edge"
+    },
+    {
+      "label": ".get_node()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L148",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".get_node()",
+      "id": "graph_model_graph_get_node"
+    },
+    {
+      "label": ".get_edge()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L156",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".get_edge()",
+      "id": "graph_model_graph_get_edge"
+    },
+    {
+      "label": ".edges_from()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L164",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".edges_from()",
+      "id": "graph_model_graph_edges_from"
+    },
+    {
+      "label": ".edges_to()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L172",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".edges_to()",
+      "id": "graph_model_graph_edges_to"
+    },
+    {
+      "label": ".topological_order()",
+      "file_type": "code",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L180",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": ".topological_order()",
+      "id": "graph_model_graph_topological_order"
+    },
+    {
+      "label": "Direction of a port on a node.",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "community": 56,
+      "norm_label": "direction of a port on a node.",
+      "id": "graph_model_rationale_15"
+    },
+    {
+      "label": "Data type flowing through a port connection.",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "community": 56,
+      "norm_label": "data type flowing through a port connection.",
+      "id": "graph_model_rationale_22"
+    },
+    {
+      "label": "A typed connection point on a node.      Attributes:         id: Unique identifi",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L33",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "a typed connection point on a node.      attributes:         id: unique identifi",
+      "id": "graph_model_rationale_33"
+    },
+    {
+      "label": "A single operation in the computation graph.      Attributes:         id: UUID s",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L52",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "a single operation in the computation graph.      attributes:         id: uuid s",
+      "id": "graph_model_rationale_52"
+    },
+    {
+      "label": "A directed connection between two ports.      Attributes:         id: UUID strin",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L73",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "a directed connection between two ports.      attributes:         id: uuid strin",
+      "id": "graph_model_rationale_73"
+    },
+    {
+      "label": "In-memory representation of the neural network computation graph (DAG).      Att",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L92",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "in-memory representation of the neural network computation graph (dag).      att",
+      "id": "graph_model_rationale_92"
+    },
+    {
+      "label": "Add a node to the graph. Silently ignored if the id already exists.          Arg",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L103",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "add a node to the graph. silently ignored if the id already exists.          arg",
+      "id": "graph_model_rationale_103"
+    },
+    {
+      "label": "Remove a node and all edges that reference it.          Args:             node_i",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L112",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "remove a node and all edges that reference it.          args:             node_i",
+      "id": "graph_model_rationale_112"
+    },
+    {
+      "label": "Add an edge to the graph. Silently ignored if the id already exists.          Ar",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L132",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "add an edge to the graph. silently ignored if the id already exists.          ar",
+      "id": "graph_model_rationale_132"
+    },
+    {
+      "label": "Remove an edge. No-op if the edge does not exist.          Args:             edg",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L141",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "remove an edge. no-op if the edge does not exist.          args:             edg",
+      "id": "graph_model_rationale_141"
+    },
+    {
+      "label": "Return the node for the given id, or None if not found.          Args:",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L149",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "return the node for the given id, or none if not found.          args:",
+      "id": "graph_model_rationale_149"
+    },
+    {
+      "label": "Return the edge for the given id, or None if not found.          Args:",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L157",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "return the edge for the given id, or none if not found.          args:",
+      "id": "graph_model_rationale_157"
+    },
+    {
+      "label": "Return all edges whose source is the given node.          Args:             node",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L165",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "return all edges whose source is the given node.          args:             node",
+      "id": "graph_model_rationale_165"
+    },
+    {
+      "label": "Return all edges whose destination is the given node.          Args:",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L173",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "return all edges whose destination is the given node.          args:",
+      "id": "graph_model_rationale_173"
+    },
+    {
+      "label": "Return node IDs in topological order using Kahn's algorithm (BFS).          Retu",
+      "file_type": "rationale",
+      "source_file": "src/neuroforge/graph/model.py",
+      "source_location": "L181",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "return node ids in topological order using kahn's algorithm (bfs).          retu",
+      "id": "graph_model_rationale_181"
+    },
+    {
+      "label": "test_graph_model.py",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "test_graph_model.py",
+      "id": "unit_test_graph_model"
+    },
+    {
+      "label": "make_node()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "make_node()",
+      "id": "unit_test_graph_model_make_node"
+    },
+    {
+      "label": "Node",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L17",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "node",
+      "id": "node"
+    },
+    {
+      "label": "make_edge()",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 52,
+      "norm_label": "make_edge()",
+      "id": "unit_test_graph_model_make_edge"
+    },
+    {
+      "label": "Edge",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L28",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "edge",
+      "id": "edge"
+    },
+    {
+      "label": "make_port()",
+      "file_type": "code",
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L38",
       "_origin": "ast",
-      "id": "port",
       "community": 37,
-      "norm_label": "port"
+      "norm_label": "make_port()",
+      "id": "unit_test_graph_model_make_port"
+    },
+    {
+      "label": "Port",
+      "file_type": "code",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L38",
+      "_origin": "ast",
+      "community": 37,
+      "norm_label": "port",
+      "id": "port"
     },
     {
       "label": "test_add_node_stores_node()",
@@ -528,9 +1098,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L51",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_add_node_stores_node",
       "community": 52,
-      "norm_label": "test_add_node_stores_node()"
+      "norm_label": "test_add_node_stores_node()",
+      "id": "unit_test_graph_model_test_add_node_stores_node"
     },
     {
       "label": "test_add_node_duplicate_is_ignored()",
@@ -538,9 +1108,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L58",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_add_node_duplicate_is_ignored",
       "community": 52,
-      "norm_label": "test_add_node_duplicate_is_ignored()"
+      "norm_label": "test_add_node_duplicate_is_ignored()",
+      "id": "unit_test_graph_model_test_add_node_duplicate_is_ignored"
     },
     {
       "label": "test_add_node_increments_count()",
@@ -548,9 +1118,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L67",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_add_node_increments_count",
       "community": 52,
-      "norm_label": "test_add_node_increments_count()"
+      "norm_label": "test_add_node_increments_count()",
+      "id": "unit_test_graph_model_test_add_node_increments_count"
     },
     {
       "label": "test_remove_node_deletes_node()",
@@ -558,9 +1128,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L77",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_remove_node_deletes_node",
       "community": 52,
-      "norm_label": "test_remove_node_deletes_node()"
+      "norm_label": "test_remove_node_deletes_node()",
+      "id": "unit_test_graph_model_test_remove_node_deletes_node"
     },
     {
       "label": "test_remove_node_returns_empty_for_unknown_id()",
@@ -568,9 +1138,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L84",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_remove_node_returns_empty_for_unknown_id",
       "community": 52,
-      "norm_label": "test_remove_node_returns_empty_for_unknown_id()"
+      "norm_label": "test_remove_node_returns_empty_for_unknown_id()",
+      "id": "unit_test_graph_model_test_remove_node_returns_empty_for_unknown_id"
     },
     {
       "label": "test_remove_node_cascades_outgoing_edges()",
@@ -578,9 +1148,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L89",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_remove_node_cascades_outgoing_edges",
       "community": 52,
-      "norm_label": "test_remove_node_cascades_outgoing_edges()"
+      "norm_label": "test_remove_node_cascades_outgoing_edges()",
+      "id": "unit_test_graph_model_test_remove_node_cascades_outgoing_edges"
     },
     {
       "label": "test_remove_node_cascades_incoming_edges()",
@@ -588,9 +1158,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L98",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_remove_node_cascades_incoming_edges",
       "community": 52,
-      "norm_label": "test_remove_node_cascades_incoming_edges()"
+      "norm_label": "test_remove_node_cascades_incoming_edges()",
+      "id": "unit_test_graph_model_test_remove_node_cascades_incoming_edges"
     },
     {
       "label": "test_remove_node_returns_cascaded_edge_ids()",
@@ -598,9 +1168,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L107",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_remove_node_returns_cascaded_edge_ids",
       "community": 52,
-      "norm_label": "test_remove_node_returns_cascaded_edge_ids()"
+      "norm_label": "test_remove_node_returns_cascaded_edge_ids()",
+      "id": "unit_test_graph_model_test_remove_node_returns_cascaded_edge_ids"
     },
     {
       "label": "test_remove_node_only_removes_connected_edges()",
@@ -608,9 +1178,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L118",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_remove_node_only_removes_connected_edges",
       "community": 52,
-      "norm_label": "test_remove_node_only_removes_connected_edges()"
+      "norm_label": "test_remove_node_only_removes_connected_edges()",
+      "id": "unit_test_graph_model_test_remove_node_only_removes_connected_edges"
     },
     {
       "label": "test_add_edge_stores_edge()",
@@ -618,9 +1188,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L132",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_add_edge_stores_edge",
       "community": 52,
-      "norm_label": "test_add_edge_stores_edge()"
+      "norm_label": "test_add_edge_stores_edge()",
+      "id": "unit_test_graph_model_test_add_edge_stores_edge"
     },
     {
       "label": "test_add_edge_duplicate_is_ignored()",
@@ -628,9 +1198,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L138",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_add_edge_duplicate_is_ignored",
       "community": 52,
-      "norm_label": "test_add_edge_duplicate_is_ignored()"
+      "norm_label": "test_add_edge_duplicate_is_ignored()",
+      "id": "unit_test_graph_model_test_add_edge_duplicate_is_ignored"
     },
     {
       "label": "test_remove_edge_deletes_edge()",
@@ -638,9 +1208,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L145",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_remove_edge_deletes_edge",
       "community": 52,
-      "norm_label": "test_remove_edge_deletes_edge()"
+      "norm_label": "test_remove_edge_deletes_edge()",
+      "id": "unit_test_graph_model_test_remove_edge_deletes_edge"
     },
     {
       "label": "test_remove_edge_unknown_id_is_noop()",
@@ -648,9 +1218,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L152",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_remove_edge_unknown_id_is_noop",
       "community": 52,
-      "norm_label": "test_remove_edge_unknown_id_is_noop()"
+      "norm_label": "test_remove_edge_unknown_id_is_noop()",
+      "id": "unit_test_graph_model_test_remove_edge_unknown_id_is_noop"
     },
     {
       "label": "test_get_node_returns_node()",
@@ -658,9 +1228,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L160",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_get_node_returns_node",
       "community": 52,
-      "norm_label": "test_get_node_returns_node()"
+      "norm_label": "test_get_node_returns_node()",
+      "id": "unit_test_graph_model_test_get_node_returns_node"
     },
     {
       "label": "test_get_node_returns_none_for_missing()",
@@ -668,9 +1238,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L167",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_get_node_returns_none_for_missing",
       "community": 52,
-      "norm_label": "test_get_node_returns_none_for_missing()"
+      "norm_label": "test_get_node_returns_none_for_missing()",
+      "id": "unit_test_graph_model_test_get_node_returns_none_for_missing"
     },
     {
       "label": "test_get_edge_returns_edge()",
@@ -678,9 +1248,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L172",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_get_edge_returns_edge",
       "community": 52,
-      "norm_label": "test_get_edge_returns_edge()"
+      "norm_label": "test_get_edge_returns_edge()",
+      "id": "unit_test_graph_model_test_get_edge_returns_edge"
     },
     {
       "label": "test_get_edge_returns_none_for_missing()",
@@ -688,9 +1258,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L179",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_get_edge_returns_none_for_missing",
       "community": 52,
-      "norm_label": "test_get_edge_returns_none_for_missing()"
+      "norm_label": "test_get_edge_returns_none_for_missing()",
+      "id": "unit_test_graph_model_test_get_edge_returns_none_for_missing"
     },
     {
       "label": "test_edges_from_returns_outgoing()",
@@ -698,9 +1268,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L187",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_edges_from_returns_outgoing",
       "community": 52,
-      "norm_label": "test_edges_from_returns_outgoing()"
+      "norm_label": "test_edges_from_returns_outgoing()",
+      "id": "unit_test_graph_model_test_edges_from_returns_outgoing"
     },
     {
       "label": "test_edges_from_returns_empty_when_none()",
@@ -708,9 +1278,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L196",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_edges_from_returns_empty_when_none",
       "community": 52,
-      "norm_label": "test_edges_from_returns_empty_when_none()"
+      "norm_label": "test_edges_from_returns_empty_when_none()",
+      "id": "unit_test_graph_model_test_edges_from_returns_empty_when_none"
     },
     {
       "label": "test_edges_to_returns_incoming()",
@@ -718,9 +1288,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L202",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_edges_to_returns_incoming",
       "community": 52,
-      "norm_label": "test_edges_to_returns_incoming()"
+      "norm_label": "test_edges_to_returns_incoming()",
+      "id": "unit_test_graph_model_test_edges_to_returns_incoming"
     },
     {
       "label": "test_edges_to_returns_empty_when_none()",
@@ -728,9 +1298,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L211",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_edges_to_returns_empty_when_none",
       "community": 52,
-      "norm_label": "test_edges_to_returns_empty_when_none()"
+      "norm_label": "test_edges_to_returns_empty_when_none()",
+      "id": "unit_test_graph_model_test_edges_to_returns_empty_when_none"
     },
     {
       "label": "test_topological_order_empty_graph()",
@@ -738,9 +1308,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L220",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_topological_order_empty_graph",
       "community": 52,
-      "norm_label": "test_topological_order_empty_graph()"
+      "norm_label": "test_topological_order_empty_graph()",
+      "id": "unit_test_graph_model_test_topological_order_empty_graph"
     },
     {
       "label": "test_topological_order_single_node()",
@@ -748,9 +1318,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L224",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_topological_order_single_node",
       "community": 52,
-      "norm_label": "test_topological_order_single_node()"
+      "norm_label": "test_topological_order_single_node()",
+      "id": "unit_test_graph_model_test_topological_order_single_node"
     },
     {
       "label": "test_topological_order_linear_chain()",
@@ -758,9 +1328,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L230",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_topological_order_linear_chain",
       "community": 52,
-      "norm_label": "test_topological_order_linear_chain()"
+      "norm_label": "test_topological_order_linear_chain()",
+      "id": "unit_test_graph_model_test_topological_order_linear_chain"
     },
     {
       "label": "test_topological_order_diamond()",
@@ -768,9 +1338,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L240",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_topological_order_diamond",
       "community": 52,
-      "norm_label": "test_topological_order_diamond()"
+      "norm_label": "test_topological_order_diamond()",
+      "id": "unit_test_graph_model_test_topological_order_diamond"
     },
     {
       "label": "test_topological_order_includes_all_nodes()",
@@ -778,9 +1348,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L256",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_topological_order_includes_all_nodes",
       "community": 52,
-      "norm_label": "test_topological_order_includes_all_nodes()"
+      "norm_label": "test_topological_order_includes_all_nodes()",
+      "id": "unit_test_graph_model_test_topological_order_includes_all_nodes"
     },
     {
       "label": "test_topological_order_raises_on_cycle()",
@@ -788,9 +1358,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L265",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_topological_order_raises_on_cycle",
       "community": 52,
-      "norm_label": "test_topological_order_raises_on_cycle()"
+      "norm_label": "test_topological_order_raises_on_cycle()",
+      "id": "unit_test_graph_model_test_topological_order_raises_on_cycle"
     },
     {
       "label": "test_topological_order_raises_on_self_loop()",
@@ -798,9 +1368,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L275",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_topological_order_raises_on_self_loop",
       "community": 52,
-      "norm_label": "test_topological_order_raises_on_self_loop()"
+      "norm_label": "test_topological_order_raises_on_self_loop()",
+      "id": "unit_test_graph_model_test_topological_order_raises_on_self_loop"
     },
     {
       "label": "test_port_stores_all_fields()",
@@ -808,9 +1378,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L286",
       "_origin": "ast",
-      "id": "unit_test_graph_model_test_port_stores_all_fields",
       "community": 37,
-      "norm_label": "test_port_stores_all_fields()"
+      "norm_label": "test_port_stores_all_fields()",
+      "id": "unit_test_graph_model_test_port_stores_all_fields"
     },
     {
       "label": "CHANGELOG.md",
@@ -1318,7 +1888,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 4,
+      "community": 61,
       "norm_label": "commandhistory",
       "id": "graph_commands_commandhistory"
     },
@@ -1328,7 +1898,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 4,
+      "community": 61,
       "norm_label": ".__init__()",
       "id": "graph_commands_commandhistory_init"
     },
@@ -1338,7 +1908,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 4,
+      "community": 61,
       "norm_label": ".push()",
       "id": "graph_commands_commandhistory_push"
     },
@@ -1348,7 +1918,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 4,
+      "community": 61,
       "norm_label": ".undo()",
       "id": "graph_commands_commandhistory_undo"
     },
@@ -1358,7 +1928,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 4,
+      "community": 61,
       "norm_label": ".redo()",
       "id": "graph_commands_commandhistory_redo"
     },
@@ -1368,7 +1938,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 4,
+      "community": 61,
       "norm_label": ".can_undo()",
       "id": "graph_commands_commandhistory_can_undo"
     },
@@ -1378,7 +1948,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L31",
       "_origin": "ast",
-      "community": 4,
+      "community": 61,
       "norm_label": ".can_redo()",
       "id": "graph_commands_commandhistory_can_redo"
     },
@@ -1388,7 +1958,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 4,
+      "community": 61,
       "norm_label": ".clear()",
       "id": "graph_commands_commandhistory_clear"
     },
@@ -1448,7 +2018,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": ".__init__()",
       "id": "graph_commands_addnodecommand_init"
     },
@@ -1458,7 +2028,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": "graph",
       "id": "src_neuroforge_graph_commands_py_graph"
     },
@@ -1468,7 +2038,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L45",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": "node",
       "id": "src_neuroforge_graph_commands_py_node"
     },
@@ -1498,7 +2068,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L52",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": "removenodecommand",
       "id": "graph_commands_removenodecommand"
     },
@@ -1508,7 +2078,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": ".__init__()",
       "id": "graph_commands_removenodecommand_init"
     },
@@ -1518,7 +2088,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": "nodeid",
       "id": "src_neuroforge_graph_commands_py_nodeid"
     },
@@ -1528,7 +2098,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": ".execute()",
       "id": "graph_commands_removenodecommand_execute"
     },
@@ -1538,7 +2108,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": ".undo()",
       "id": "graph_commands_removenodecommand_undo"
     },
@@ -1558,7 +2128,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": ".__init__()",
       "id": "graph_commands_movenodecommand_init"
     },
@@ -1598,7 +2168,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": ".__init__()",
       "id": "graph_commands_addedgecommand_init"
     },
@@ -1608,7 +2178,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": "edge",
       "id": "src_neuroforge_graph_commands_py_edge"
     },
@@ -1638,7 +2208,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L82",
       "_origin": "ast",
-      "community": 4,
+      "community": 62,
       "norm_label": "removeedgecommand",
       "id": "graph_commands_removeedgecommand"
     },
@@ -1648,7 +2218,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L83",
       "_origin": "ast",
-      "community": 4,
+      "community": 62,
       "norm_label": ".__init__()",
       "id": "graph_commands_removeedgecommand_init"
     },
@@ -1658,7 +2228,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L83",
       "_origin": "ast",
-      "community": 4,
+      "community": 62,
       "norm_label": "edgeid",
       "id": "src_neuroforge_graph_commands_py_edgeid"
     },
@@ -1668,7 +2238,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L85",
       "_origin": "ast",
-      "community": 4,
+      "community": 62,
       "norm_label": ".execute()",
       "id": "graph_commands_removeedgecommand_execute"
     },
@@ -1678,7 +2248,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L87",
       "_origin": "ast",
-      "community": 4,
+      "community": 62,
       "norm_label": ".undo()",
       "id": "graph_commands_removeedgecommand_undo"
     },
@@ -1698,7 +2268,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L91",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": ".__init__()",
       "id": "graph_commands_updateparamcommand_init"
     },
@@ -1708,7 +2278,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L91",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": "any",
       "id": "src_neuroforge_graph_commands_py_any"
     },
@@ -1748,7 +2318,7 @@
       "source_file": "src/neuroforge/graph/commands.py",
       "source_location": "L106",
       "_origin": "ast",
-      "community": 4,
+      "community": 58,
       "norm_label": ".__init__()",
       "id": "graph_commands_groupnodescommand_init"
     },
@@ -1778,7 +2348,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "components.py",
       "id": "graph_components"
     },
@@ -1788,7 +2358,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "componentdefinition",
       "id": "graph_components_componentdefinition"
     },
@@ -1798,7 +2368,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "componentlibrary",
       "id": "graph_components_componentlibrary"
     },
@@ -1808,7 +2378,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": ".register()",
       "id": "graph_components_componentlibrary_register"
     },
@@ -1818,7 +2388,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": ".get()",
       "id": "graph_components_componentlibrary_get"
     },
@@ -1828,7 +2398,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": ".all()",
       "id": "graph_components_componentlibrary_all"
     },
@@ -1838,7 +2408,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": ".remove()",
       "id": "graph_components_componentlibrary_remove"
     },
@@ -1848,7 +2418,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": ".create_from_selection()",
       "id": "graph_components_componentlibrary_create_from_selection"
     },
@@ -1858,7 +2428,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "graph",
       "id": "src_neuroforge_graph_components_py_graph"
     },
@@ -1868,7 +2438,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "nodeid",
       "id": "src_neuroforge_graph_components_py_nodeid"
     },
@@ -1878,7 +2448,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": "registry.py",
       "id": "graph_registry"
     },
@@ -1888,7 +2458,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": "portdefinition",
       "id": "graph_registry_portdefinition"
     },
@@ -1898,7 +2468,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L20",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": "nodedefinition",
       "id": "graph_registry_nodedefinition"
     },
@@ -1908,7 +2478,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": "noderegistry",
       "id": "graph_registry_noderegistry"
     },
@@ -1918,7 +2488,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": ".register()",
       "id": "graph_registry_noderegistry_register"
     },
@@ -1928,7 +2498,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": ".get()",
       "id": "graph_registry_noderegistry_get"
     },
@@ -1938,7 +2508,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": ".all()",
       "id": "graph_registry_noderegistry_all"
     },
@@ -1948,7 +2518,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L36",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": ".categories()",
       "id": "graph_registry_noderegistry_categories"
     },
@@ -1958,7 +2528,7 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L38",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": ".by_category()",
       "id": "graph_registry_noderegistry_by_category"
     },
@@ -1968,109 +2538,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L41",
       "_origin": "ast",
-      "community": 37,
+      "community": 56,
       "norm_label": "build_default_registry()",
       "id": "graph_registry_build_default_registry"
-    },
-    {
-      "label": "serializer.py",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": "serializer.py",
-      "id": "graph_serializer"
-    },
-    {
-      "label": "GraphSerializer",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L12",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": "graphserializer",
-      "id": "graph_serializer_graphserializer"
-    },
-    {
-      "label": ".to_dict()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": ".to_dict()",
-      "id": "graph_serializer_graphserializer_to_dict"
-    },
-    {
-      "label": "Graph",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": "graph",
-      "id": "src_neuroforge_graph_serializer_py_graph"
-    },
-    {
-      "label": "Any",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L13",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": "any",
-      "id": "src_neuroforge_graph_serializer_py_any"
-    },
-    {
-      "label": ".from_dict()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L15",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": ".from_dict()",
-      "id": "graph_serializer_graphserializer_from_dict"
-    },
-    {
-      "label": ".save()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": ".save()",
-      "id": "graph_serializer_graphserializer_save"
-    },
-    {
-      "label": "Path",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L17",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": "path",
-      "id": "src_neuroforge_graph_serializer_py_path"
-    },
-    {
-      "label": ".load()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L19",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": ".load()",
-      "id": "graph_serializer_graphserializer_load"
-    },
-    {
-      "label": "._migrate()",
-      "file_type": "code",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L21",
-      "_origin": "ast",
-      "community": 54,
-      "norm_label": "._migrate()",
-      "id": "graph_serializer_graphserializer_migrate"
     },
     {
       "label": "validator.py",
@@ -2198,7 +2668,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": "items.py",
       "id": "graph_editor_items"
     },
@@ -2208,7 +2678,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": "portitem",
       "id": "graph_editor_items_portitem"
     },
@@ -2218,7 +2688,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": "qgraphicsellipseitem",
       "id": "qgraphicsellipseitem"
     },
@@ -2248,7 +2718,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".port_id()",
       "id": "graph_editor_items_portitem_port_id"
     },
@@ -2258,7 +2728,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L28",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": "portid",
       "id": "portid"
     },
@@ -2268,7 +2738,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": ".center()",
       "id": "graph_editor_items_portitem_center"
     },
@@ -2278,7 +2748,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L30",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": "qpointf",
       "id": "qpointf"
     },
@@ -2288,7 +2758,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".mousepressevent()",
       "id": "graph_editor_items_portitem_mousepressevent"
     },
@@ -2298,7 +2768,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": "qgraphicsscenemouseevent",
       "id": "qgraphicsscenemouseevent"
     },
@@ -2308,7 +2778,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L34",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".mousereleaseevent()",
       "id": "graph_editor_items_portitem_mousereleaseevent"
     },
@@ -2318,7 +2788,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L37",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": "nodeitem",
       "id": "graph_editor_items_nodeitem"
     },
@@ -2348,7 +2818,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L40",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".node_id()",
       "id": "graph_editor_items_nodeitem_node_id"
     },
@@ -2418,7 +2888,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L51",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".port_item()",
       "id": "graph_editor_items_nodeitem_port_item"
     },
@@ -2428,7 +2898,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L53",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".port_center()",
       "id": "graph_editor_items_nodeitem_port_center"
     },
@@ -2438,7 +2908,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L55",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".set_position()",
       "id": "graph_editor_items_nodeitem_set_position"
     },
@@ -2448,7 +2918,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L57",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".mousepressevent()",
       "id": "graph_editor_items_nodeitem_mousepressevent"
     },
@@ -2458,7 +2928,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L59",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".mousemoveevent()",
       "id": "graph_editor_items_nodeitem_mousemoveevent"
     },
@@ -2468,7 +2938,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L61",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".mousereleaseevent()",
       "id": "graph_editor_items_nodeitem_mousereleaseevent"
     },
@@ -2478,7 +2948,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L63",
       "_origin": "ast",
-      "community": 37,
+      "community": 57,
       "norm_label": ".mousedoubleclickevent()",
       "id": "graph_editor_items_nodeitem_mousedoubleclickevent"
     },
@@ -2508,7 +2978,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L68",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": "edgeitem",
       "id": "graph_editor_items_edgeitem"
     },
@@ -2518,7 +2988,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": "qgraphicspathitem",
       "id": "qgraphicspathitem"
     },
@@ -2528,7 +2998,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L69",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": ".__init__()",
       "id": "graph_editor_items_edgeitem_init"
     },
@@ -2538,7 +3008,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L69",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": "edge",
       "id": "src_neuroforge_ui_graph_editor_items_py_edge"
     },
@@ -2548,7 +3018,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L71",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": ".edge_id()",
       "id": "graph_editor_items_edgeitem_edge_id"
     },
@@ -2558,7 +3028,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L73",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": ".update_path()",
       "id": "graph_editor_items_edgeitem_update_path"
     },
@@ -2568,7 +3038,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L75",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": "._bezier_path()",
       "id": "graph_editor_items_edgeitem_bezier_path"
     },
@@ -2578,7 +3048,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L78",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": "edgedraftitem",
       "id": "graph_editor_items_edgedraftitem"
     },
@@ -2588,7 +3058,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L79",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": ".__init__()",
       "id": "graph_editor_items_edgedraftitem_init"
     },
@@ -2598,7 +3068,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L81",
       "_origin": "ast",
-      "community": 37,
+      "community": 59,
       "norm_label": ".update_end()",
       "id": "graph_editor_items_edgedraftitem_update_end"
     },
@@ -2678,7 +3148,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/scene.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 50,
+      "community": 37,
       "norm_label": "node",
       "id": "src_neuroforge_ui_graph_editor_scene_py_node"
     },
@@ -2718,7 +3188,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/scene.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 50,
+      "community": 37,
       "norm_label": "edge",
       "id": "src_neuroforge_ui_graph_editor_scene_py_edge"
     },
@@ -2738,7 +3208,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/scene.py",
       "source_location": "L29",
       "_origin": "ast",
-      "community": 50,
+      "community": 37,
       "norm_label": "edgeid",
       "id": "src_neuroforge_ui_graph_editor_scene_py_edgeid"
     },
@@ -6176,6 +6646,1630 @@
   ],
   "links": [
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "graph_serializer",
+      "target": "enum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer",
+      "target": "graph_model"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer",
+      "target": "graph_model_graph"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "graph_serializer",
+      "target": "graph_serializer_to_serializable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_to_dict",
+      "target": "graph_serializer_to_serializable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "graph_serializer_rationale_15",
+      "target": "graph_serializer_to_serializable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "graph_serializer_to_serializable",
+      "target": "any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_edge_from_dict",
+      "target": "any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_from_dict",
+      "target": "any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_migrate",
+      "target": "any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_node_from_dict",
+      "target": "any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_port_from_dict",
+      "target": "any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_to_dict",
+      "target": "any",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L7",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_model_graph"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_serializer_graphserializer_edge_from_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_serializer_graphserializer_from_dict"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_serializer_graphserializer_load"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_serializer_graphserializer_migrate"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_serializer_graphserializer_node_from_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_serializer_graphserializer_port_from_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_serializer_graphserializer_save"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer",
+      "target": "graph_serializer_graphserializer_to_dict"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "graph_serializer_rationale_26",
+      "target": "graph_serializer_graphserializer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "source": "portdirection",
+      "target": "graph_serializer_graphserializer",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "source": "tests_unit_test_graph_serializer_py_edge",
+      "target": "graph_serializer_graphserializer",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "source": "tests_unit_test_graph_serializer_py_graph",
+      "target": "graph_serializer_graphserializer",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "source": "tests_unit_test_graph_serializer_py_node",
+      "target": "graph_serializer_graphserializer",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "source": "tests_unit_test_graph_serializer_py_path",
+      "target": "graph_serializer_graphserializer",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "source": "tests_unit_test_graph_serializer_py_port",
+      "target": "graph_serializer_graphserializer",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_missing_schema_version_defaults_to_1",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_edges",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_node_type",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_nodes",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_port_enums",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_position_as_tuple",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_returns_graph",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_load_raises_if_file_missing",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_load_returns_graph",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_edge_count",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_node_count",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_preserves_params",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_preserves_port_required",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_creates_file",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_creates_parent_directories",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L214",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_load_roundtrip",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L192",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_writes_valid_json",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_contains_nodes_and_edges_keys",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_contains_schema_version",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_edge_is_dict",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_enum_stored_as_int",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_nodes_are_dicts_not_objects",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_position_stored_as_list",
+      "target": "graph_serializer_graphserializer"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_save",
+      "target": "graph_serializer_graphserializer_to_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer_to_dict",
+      "target": "src_neuroforge_graph_serializer_py_graph"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "graph_serializer_rationale_35",
+      "target": "graph_serializer_graphserializer_to_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer_from_dict",
+      "target": "src_neuroforge_graph_serializer_py_graph"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer_load",
+      "target": "src_neuroforge_graph_serializer_py_graph"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer_save",
+      "target": "src_neuroforge_graph_serializer_py_graph"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L7",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "src_neuroforge_graph_serializer_py_graph",
+      "target": "graph_model_graph"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_from_dict",
+      "target": "graph_serializer_graphserializer_edge_from_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_from_dict",
+      "target": "graph_serializer_graphserializer_migrate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_from_dict",
+      "target": "graph_serializer_graphserializer_node_from_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_load",
+      "target": "graph_serializer_graphserializer_from_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "graph_serializer_rationale_51",
+      "target": "graph_serializer_graphserializer_from_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer_save",
+      "target": "src_neuroforge_graph_serializer_py_path"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "graph_serializer_rationale_75",
+      "target": "graph_serializer_graphserializer_save",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graph_serializer_graphserializer_load",
+      "target": "src_neuroforge_graph_serializer_py_path"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L7",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "src_neuroforge_graph_serializer_py_path",
+      "target": "graph_model_graph"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "graph_serializer_rationale_88",
+      "target": "graph_serializer_graphserializer_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "graph_serializer_rationale_104",
+      "target": "graph_serializer_graphserializer_migrate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_node_from_dict",
+      "target": "graph_serializer_graphserializer_port_from_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_port_from_dict",
+      "target": "portdirection"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_port_from_dict",
+      "target": "src_neuroforge_graph_serializer_py_port",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_node_from_dict",
+      "target": "src_neuroforge_graph_serializer_py_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/neuroforge/graph/serializer.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "graph_serializer_graphserializer_edge_from_dict",
+      "target": "src_neuroforge_graph_serializer_py_edge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_make_edge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_make_port",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_from_dict_missing_schema_version_defaults_to_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_from_dict_reconstructs_edges",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_from_dict_reconstructs_node_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_from_dict_reconstructs_nodes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_from_dict_reconstructs_port_enums",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_from_dict_reconstructs_position_as_tuple",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_from_dict_returns_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_load_raises_if_file_missing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_load_returns_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_roundtrip_edge_count",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_roundtrip_node_count",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_roundtrip_preserves_params",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_roundtrip_preserves_port_required",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_save_creates_file",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_save_creates_parent_directories",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_save_load_roundtrip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_save_writes_valid_json",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_to_dict_contains_nodes_and_edges_keys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_to_dict_contains_schema_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_to_dict_edge_is_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_to_dict_enum_stored_as_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_to_dict_nodes_are_dicts_not_objects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer",
+      "target": "unit_test_graph_serializer_test_to_dict_position_stored_as_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_make_node",
+      "target": "unit_test_graph_serializer_make_port",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_make_port",
+      "target": "portdirection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_make_port",
+      "target": "tests_unit_test_graph_serializer_py_port",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "portdirection",
+      "target": "graph_model_datatype"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "portdirection",
+      "target": "graph_model_edge"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "portdirection",
+      "target": "graph_model_graph"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "portdirection",
+      "target": "graph_model_node"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "portdirection",
+      "target": "graph_model_port"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L5",
+      "weight": 0.8,
+      "confidence_score": 0.5,
+      "source": "portdirection",
+      "target": "graph_model_portdirection"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_model.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "unit_test_graph_model_make_port",
+      "target": "portdirection"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_make_graph",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_make_node",
+      "target": "tests_unit_test_graph_serializer_py_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_node_type",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_port_enums",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_position_as_tuple",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_preserves_params",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_preserves_port_required",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_enum_stored_as_int",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_nodes_are_dicts_not_objects",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_position_stored_as_list",
+      "target": "unit_test_graph_serializer_make_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_make_edge",
+      "target": "tests_unit_test_graph_serializer_py_edge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_make_graph",
+      "target": "unit_test_graph_serializer_make_edge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_edge_is_dict",
+      "target": "unit_test_graph_serializer_make_edge",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_make_graph",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_edges",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_nodes",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L209",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_load_returns_graph",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L156",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_edge_count",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_node_count",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_creates_file",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_load_roundtrip",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_writes_valid_json",
+      "target": "unit_test_graph_serializer_make_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_node_type",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_port_enums",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_from_dict_reconstructs_position_as_tuple",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_preserves_params",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_roundtrip_preserves_port_required",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_creates_parent_directories",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_contains_nodes_and_edges_keys",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_contains_schema_version",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_edge_is_dict",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_enum_stored_as_int",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_nodes_are_dicts_not_objects",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_to_dict_position_stored_as_list",
+      "target": "tests_unit_test_graph_serializer_py_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_creates_file",
+      "target": "tests_unit_test_graph_serializer_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_load_raises_if_file_missing",
+      "target": "tests_unit_test_graph_serializer_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L206",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_load_returns_graph",
+      "target": "tests_unit_test_graph_serializer_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_creates_parent_directories",
+      "target": "tests_unit_test_graph_serializer_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_load_roundtrip",
+      "target": "tests_unit_test_graph_serializer_py_path",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/unit/test_graph_serializer.py",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "unit_test_graph_serializer_test_save_writes_valid_json",
+      "target": "tests_unit_test_graph_serializer_py_path",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -6283,17 +8377,6 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L7",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer",
-      "target": "graph_model"
-    },
-    {
-      "relation": "imports_from",
-      "context": "import",
-      "confidence": "EXTRACTED",
       "source_file": "src/neuroforge/graph/validator.py",
       "source_location": "L6",
       "weight": 1.0,
@@ -6307,9 +8390,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "edge",
-      "target": "graph_model_portdirection",
-      "confidence_score": 0.5
+      "target": "graph_model_portdirection"
     },
     {
       "relation": "inherits",
@@ -6327,9 +8410,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_15",
-      "target": "graph_model_portdirection",
-      "confidence_score": 1.0
+      "target": "graph_model_portdirection"
     },
     {
       "relation": "imports",
@@ -6378,9 +8461,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "node",
-      "target": "graph_model_portdirection",
-      "confidence_score": 0.5
+      "target": "graph_model_portdirection"
     },
     {
       "relation": "uses",
@@ -6388,19 +8471,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "port",
-      "target": "graph_model_portdirection",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L5",
-      "weight": 0.8,
-      "source": "portdirection",
-      "target": "graph_model_portdirection",
-      "confidence_score": 0.5
+      "target": "graph_model_portdirection"
     },
     {
       "relation": "inherits",
@@ -6418,9 +8491,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "edge",
-      "target": "graph_model_datatype",
-      "confidence_score": 0.5
+      "target": "graph_model_datatype"
     },
     {
       "relation": "rationale_for",
@@ -6428,9 +8501,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_22",
-      "target": "graph_model_datatype",
-      "confidence_score": 1.0
+      "target": "graph_model_datatype"
     },
     {
       "relation": "imports",
@@ -6479,9 +8552,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "node",
-      "target": "graph_model_datatype",
-      "confidence_score": 0.5
+      "target": "graph_model_datatype"
     },
     {
       "relation": "uses",
@@ -6489,9 +8562,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "port",
-      "target": "graph_model_datatype",
-      "confidence_score": 0.5
+      "target": "graph_model_datatype"
     },
     {
       "relation": "uses",
@@ -6499,19 +8572,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
-      "source": "portdirection",
-      "target": "graph_model_datatype",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L5",
-      "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "edge",
-      "target": "graph_model_port",
-      "confidence_score": 0.5
+      "target": "graph_model_port"
     },
     {
       "relation": "imports",
@@ -6590,9 +8653,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_33",
-      "target": "graph_model_port",
-      "confidence_score": 1.0
+      "target": "graph_model_port"
     },
     {
       "relation": "uses",
@@ -6600,9 +8663,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "node",
-      "target": "graph_model_port",
-      "confidence_score": 0.5
+      "target": "graph_model_port"
     },
     {
       "relation": "uses",
@@ -6613,16 +8676,6 @@
       "confidence_score": 0.5,
       "source": "port",
       "target": "graph_model_port"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L5",
-      "weight": 0.8,
-      "source": "portdirection",
-      "target": "graph_model_port",
-      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -6760,9 +8813,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "edge",
-      "target": "graph_model_node",
-      "confidence_score": 0.5
+      "target": "graph_model_node"
     },
     {
       "relation": "imports",
@@ -6953,9 +9006,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_52",
-      "target": "graph_model_node",
-      "confidence_score": 1.0
+      "target": "graph_model_node"
     },
     {
       "relation": "uses",
@@ -6963,9 +9016,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "node",
-      "target": "graph_model_node",
-      "confidence_score": 0.5
+      "target": "graph_model_node"
     },
     {
       "relation": "uses",
@@ -6976,16 +9029,6 @@
       "confidence_score": 0.5,
       "source": "port",
       "target": "graph_model_node"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L5",
-      "weight": 0.8,
-      "source": "portdirection",
-      "target": "graph_model_node",
-      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7213,9 +9256,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "edge",
-      "target": "graph_model_edge",
-      "confidence_score": 0.5
+      "target": "graph_model_edge"
     },
     {
       "relation": "imports",
@@ -7428,9 +9471,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_73",
-      "target": "graph_model_edge",
-      "confidence_score": 1.0
+      "target": "graph_model_edge"
     },
     {
       "relation": "uses",
@@ -7438,9 +9481,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "node",
-      "target": "graph_model_edge",
-      "confidence_score": 0.5
+      "target": "graph_model_edge"
     },
     {
       "relation": "uses",
@@ -7451,16 +9494,6 @@
       "confidence_score": 0.5,
       "source": "port",
       "target": "graph_model_edge"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L5",
-      "weight": 0.8,
-      "source": "portdirection",
-      "target": "graph_model_edge",
-      "confidence_score": 0.5
     },
     {
       "relation": "uses",
@@ -7688,9 +9721,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "edge",
-      "target": "graph_model_graph",
-      "confidence_score": 0.5
+      "target": "graph_model_graph"
     },
     {
       "relation": "imports",
@@ -7940,29 +9973,8 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L92",
       "weight": 1.0,
-      "source": "graph_model_rationale_92",
-      "target": "graph_model_graph",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "imports",
-      "context": "import",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L7",
-      "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "graph_serializer",
-      "target": "graph_model_graph"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L7",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "graph_serializer_graphserializer",
+      "source": "graph_model_rationale_92",
       "target": "graph_model_graph"
     },
     {
@@ -8012,9 +10024,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "node",
-      "target": "graph_model_graph",
-      "confidence_score": 0.5
+      "target": "graph_model_graph"
     },
     {
       "relation": "uses",
@@ -8022,19 +10034,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L5",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "port",
-      "target": "graph_model_graph",
-      "confidence_score": 0.5
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L5",
-      "weight": 0.8,
-      "source": "portdirection",
-      "target": "graph_model_graph",
-      "confidence_score": 0.5
+      "target": "graph_model_graph"
     },
     {
       "relation": "uses",
@@ -8114,36 +10116,6 @@
       "weight": 0.8,
       "confidence_score": 0.5,
       "source": "src_neuroforge_graph_components_py_nodeid",
-      "target": "graph_model_graph"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L7",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "src_neuroforge_graph_serializer_py_any",
-      "target": "graph_model_graph"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L7",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "src_neuroforge_graph_serializer_py_graph",
-      "target": "graph_model_graph"
-    },
-    {
-      "relation": "uses",
-      "confidence": "INFERRED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L7",
-      "weight": 0.8,
-      "confidence_score": 0.5,
-      "source": "src_neuroforge_graph_serializer_py_path",
       "target": "graph_model_graph"
     },
     {
@@ -8520,9 +10492,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_103",
-      "target": "graph_model_graph_add_node",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_add_node"
     },
     {
       "relation": "references",
@@ -8531,9 +10503,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_remove_node",
-      "target": "edgeid",
-      "confidence_score": 1.0
+      "target": "edgeid"
     },
     {
       "relation": "calls",
@@ -8542,9 +10514,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_remove_node",
-      "target": "graph_model_graph_remove_edge",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_remove_edge"
     },
     {
       "relation": "references",
@@ -8553,9 +10525,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L111",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_remove_node",
-      "target": "nodeid",
-      "confidence_score": 1.0
+      "target": "nodeid"
     },
     {
       "relation": "rationale_for",
@@ -8563,9 +10535,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_112",
-      "target": "graph_model_graph_remove_node",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_remove_node"
     },
     {
       "relation": "references",
@@ -8574,9 +10546,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L164",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_edges_from",
-      "target": "nodeid",
-      "confidence_score": 1.0
+      "target": "nodeid"
     },
     {
       "relation": "references",
@@ -8585,9 +10557,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_edges_to",
-      "target": "nodeid",
-      "confidence_score": 1.0
+      "target": "nodeid"
     },
     {
       "relation": "references",
@@ -8596,9 +10568,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L148",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_get_node",
-      "target": "nodeid",
-      "confidence_score": 1.0
+      "target": "nodeid"
     },
     {
       "relation": "references",
@@ -8607,9 +10579,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_topological_order",
-      "target": "nodeid",
-      "confidence_score": 1.0
+      "target": "nodeid"
     },
     {
       "relation": "references",
@@ -8618,9 +10590,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_get_edge",
-      "target": "edgeid",
-      "confidence_score": 1.0
+      "target": "edgeid"
     },
     {
       "relation": "references",
@@ -8629,9 +10601,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_remove_edge",
-      "target": "edgeid",
-      "confidence_score": 1.0
+      "target": "edgeid"
     },
     {
       "relation": "rationale_for",
@@ -8639,9 +10611,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_132",
-      "target": "graph_model_graph_add_edge",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_add_edge"
     },
     {
       "relation": "rationale_for",
@@ -8649,9 +10621,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_141",
-      "target": "graph_model_graph_remove_edge",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_remove_edge"
     },
     {
       "relation": "rationale_for",
@@ -8659,9 +10631,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_149",
-      "target": "graph_model_graph_get_node",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_get_node"
     },
     {
       "relation": "rationale_for",
@@ -8669,9 +10641,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_157",
-      "target": "graph_model_graph_get_edge",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_get_edge"
     },
     {
       "relation": "calls",
@@ -8680,9 +10652,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L199",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_graph_topological_order",
-      "target": "graph_model_graph_edges_from",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_edges_from"
     },
     {
       "relation": "rationale_for",
@@ -8690,9 +10662,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_165",
-      "target": "graph_model_graph_edges_from",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_edges_from"
     },
     {
       "relation": "rationale_for",
@@ -8700,9 +10672,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_173",
-      "target": "graph_model_graph_edges_to",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_edges_to"
     },
     {
       "relation": "rationale_for",
@@ -8710,9 +10682,9 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_model_rationale_181",
-      "target": "graph_model_graph_topological_order",
-      "confidence_score": 1.0
+      "target": "graph_model_graph_topological_order"
     },
     {
       "relation": "contains",
@@ -8720,9 +10692,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "contains",
@@ -8730,9 +10702,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "contains",
@@ -8740,9 +10712,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_make_port",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_port"
     },
     {
       "relation": "contains",
@@ -8750,9 +10722,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L138",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_add_edge_duplicate_is_ignored",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_add_edge_duplicate_is_ignored"
     },
     {
       "relation": "contains",
@@ -8760,9 +10732,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_add_edge_stores_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_add_edge_stores_edge"
     },
     {
       "relation": "contains",
@@ -8770,9 +10742,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_add_node_duplicate_is_ignored",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_add_node_duplicate_is_ignored"
     },
     {
       "relation": "contains",
@@ -8780,9 +10752,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_add_node_increments_count",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_add_node_increments_count"
     },
     {
       "relation": "contains",
@@ -8790,9 +10762,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_add_node_stores_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_add_node_stores_node"
     },
     {
       "relation": "contains",
@@ -8800,9 +10772,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_edges_from_returns_empty_when_none",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_edges_from_returns_empty_when_none"
     },
     {
       "relation": "contains",
@@ -8810,9 +10782,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_edges_from_returns_outgoing",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_edges_from_returns_outgoing"
     },
     {
       "relation": "contains",
@@ -8820,9 +10792,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L211",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_edges_to_returns_empty_when_none",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_edges_to_returns_empty_when_none"
     },
     {
       "relation": "contains",
@@ -8830,9 +10802,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_edges_to_returns_incoming",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_edges_to_returns_incoming"
     },
     {
       "relation": "contains",
@@ -8840,9 +10812,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L172",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_get_edge_returns_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_get_edge_returns_edge"
     },
     {
       "relation": "contains",
@@ -8850,9 +10822,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_get_edge_returns_none_for_missing",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_get_edge_returns_none_for_missing"
     },
     {
       "relation": "contains",
@@ -8860,9 +10832,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_get_node_returns_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_get_node_returns_node"
     },
     {
       "relation": "contains",
@@ -8870,9 +10842,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_get_node_returns_none_for_missing",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_get_node_returns_none_for_missing"
     },
     {
       "relation": "contains",
@@ -8880,9 +10852,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L286",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_port_stores_all_fields",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_port_stores_all_fields"
     },
     {
       "relation": "contains",
@@ -8890,9 +10862,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_remove_edge_deletes_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_remove_edge_deletes_edge"
     },
     {
       "relation": "contains",
@@ -8900,9 +10872,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_remove_edge_unknown_id_is_noop",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_remove_edge_unknown_id_is_noop"
     },
     {
       "relation": "contains",
@@ -8910,9 +10882,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_remove_node_cascades_incoming_edges",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_remove_node_cascades_incoming_edges"
     },
     {
       "relation": "contains",
@@ -8920,9 +10892,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_remove_node_cascades_outgoing_edges",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_remove_node_cascades_outgoing_edges"
     },
     {
       "relation": "contains",
@@ -8930,9 +10902,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_remove_node_deletes_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_remove_node_deletes_node"
     },
     {
       "relation": "contains",
@@ -8940,9 +10912,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_remove_node_only_removes_connected_edges",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_remove_node_only_removes_connected_edges"
     },
     {
       "relation": "contains",
@@ -8950,9 +10922,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_remove_node_returns_cascaded_edge_ids",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_remove_node_returns_cascaded_edge_ids"
     },
     {
       "relation": "contains",
@@ -8960,9 +10932,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_remove_node_returns_empty_for_unknown_id",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_remove_node_returns_empty_for_unknown_id"
     },
     {
       "relation": "contains",
@@ -8970,9 +10942,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L240",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_topological_order_diamond",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_topological_order_diamond"
     },
     {
       "relation": "contains",
@@ -8980,9 +10952,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L220",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_topological_order_empty_graph",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_topological_order_empty_graph"
     },
     {
       "relation": "contains",
@@ -8990,9 +10962,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L256",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_topological_order_includes_all_nodes",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_topological_order_includes_all_nodes"
     },
     {
       "relation": "contains",
@@ -9000,9 +10972,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_topological_order_linear_chain",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_topological_order_linear_chain"
     },
     {
       "relation": "contains",
@@ -9010,9 +10982,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L265",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_topological_order_raises_on_cycle",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_topological_order_raises_on_cycle"
     },
     {
       "relation": "contains",
@@ -9020,9 +10992,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L275",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_topological_order_raises_on_self_loop",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_topological_order_raises_on_self_loop"
     },
     {
       "relation": "contains",
@@ -9030,9 +11002,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L224",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model",
-      "target": "unit_test_graph_model_test_topological_order_single_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_test_topological_order_single_node"
     },
     {
       "relation": "references",
@@ -9041,9 +11013,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_make_node",
-      "target": "node",
-      "confidence_score": 1.0
+      "target": "node"
     },
     {
       "relation": "calls",
@@ -9052,9 +11024,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_add_node_duplicate_is_ignored",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9063,9 +11035,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_add_node_increments_count",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9074,9 +11046,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_add_node_stores_node",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9085,9 +11057,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_get_node_returns_node",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9096,9 +11068,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_cascades_incoming_edges",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9107,9 +11079,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_cascades_outgoing_edges",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9118,9 +11090,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_deletes_node",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9129,9 +11101,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_only_removes_connected_edges",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9140,9 +11112,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_returns_cascaded_edge_ids",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9151,9 +11123,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L244",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_diamond",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9162,9 +11134,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L259",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_includes_all_nodes",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9173,9 +11145,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L233",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_linear_chain",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9184,9 +11156,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L267",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_raises_on_cycle",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9195,9 +11167,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L277",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_raises_on_self_loop",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "calls",
@@ -9206,9 +11178,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L226",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_single_node",
-      "target": "unit_test_graph_model_make_node",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_node"
     },
     {
       "relation": "references",
@@ -9217,9 +11189,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_make_edge",
-      "target": "edge",
-      "confidence_score": 1.0
+      "target": "edge"
     },
     {
       "relation": "calls",
@@ -9228,9 +11200,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_add_edge_duplicate_is_ignored",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9239,9 +11211,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_add_edge_stores_edge",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9250,9 +11222,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L198",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_edges_from_returns_empty_when_none",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9261,9 +11233,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_edges_from_returns_outgoing",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9272,9 +11244,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L213",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_edges_to_returns_empty_when_none",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9283,9 +11255,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L204",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_edges_to_returns_incoming",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9294,9 +11266,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_get_edge_returns_edge",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9305,9 +11277,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_edge_deletes_edge",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9316,9 +11288,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_cascades_incoming_edges",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9327,9 +11299,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_cascades_outgoing_edges",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9338,9 +11310,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_only_removes_connected_edges",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9349,9 +11321,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L112",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_remove_node_returns_cascaded_edge_ids",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9360,9 +11332,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L245",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_diamond",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9371,9 +11343,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L260",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_includes_all_nodes",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9382,9 +11354,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L234",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_linear_chain",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9393,9 +11365,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L269",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_raises_on_cycle",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "calls",
@@ -9404,9 +11376,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L278",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_topological_order_raises_on_self_loop",
-      "target": "unit_test_graph_model_make_edge",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_edge"
     },
     {
       "relation": "references",
@@ -9415,20 +11387,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_make_port",
-      "target": "port",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "tests/unit/test_graph_model.py",
-      "source_location": "L38",
-      "weight": 1.0,
-      "source": "unit_test_graph_model_make_port",
-      "target": "portdirection",
-      "confidence_score": 1.0
+      "target": "port"
     },
     {
       "relation": "calls",
@@ -9437,9 +11398,9 @@
       "source_file": "tests/unit/test_graph_model.py",
       "source_location": "L287",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_graph_model_test_port_stores_all_fields",
-      "target": "unit_test_graph_model_make_port",
-      "confidence_score": 1.0
+      "target": "unit_test_graph_model_make_port"
     },
     {
       "relation": "references",
@@ -10933,165 +12894,6 @@
       "confidence_score": 1.0,
       "source": "graph_registry_noderegistry",
       "target": "graph_registry_noderegistry_register"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L12",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer",
-      "target": "graph_serializer_graphserializer"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer",
-      "target": "graph_serializer_graphserializer_from_dict"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer",
-      "target": "graph_serializer_graphserializer_load"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer",
-      "target": "graph_serializer_graphserializer_migrate"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer",
-      "target": "graph_serializer_graphserializer_save"
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer",
-      "target": "graph_serializer_graphserializer_to_dict"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_to_dict",
-      "target": "src_neuroforge_graph_serializer_py_any"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L13",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_to_dict",
-      "target": "src_neuroforge_graph_serializer_py_graph"
-    },
-    {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_from_dict",
-      "target": "src_neuroforge_graph_serializer_py_graph"
-    },
-    {
-      "relation": "references",
-      "context": "return_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_load",
-      "target": "src_neuroforge_graph_serializer_py_graph"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_save",
-      "target": "src_neuroforge_graph_serializer_py_graph"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L15",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_from_dict",
-      "target": "src_neuroforge_graph_serializer_py_any"
-    },
-    {
-      "relation": "references",
-      "context": "generic_arg",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L21",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_migrate",
-      "target": "src_neuroforge_graph_serializer_py_any"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L17",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_save",
-      "target": "src_neuroforge_graph_serializer_py_path"
-    },
-    {
-      "relation": "references",
-      "context": "parameter_type",
-      "confidence": "EXTRACTED",
-      "source_file": "src/neuroforge/graph/serializer.py",
-      "source_location": "L19",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "graph_serializer_graphserializer_load",
-      "target": "src_neuroforge_graph_serializer_py_path"
     },
     {
       "relation": "contains",
@@ -15570,5 +17372,5 @@
       "source_file": "docs/dev/phase1_project_graph.md"
     }
   ],
-  "built_at_commit": "79b4aa7bf4c7137e4f9d1c067ab5323f98e6f5ca"
+  "built_at_commit": "9ed7a6c53bd36ea707fc1dccfbb2f679f4c78d12"
 }
