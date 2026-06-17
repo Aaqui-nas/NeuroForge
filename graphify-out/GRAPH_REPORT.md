@@ -1,16 +1,16 @@
 # Graph Report - NeuroForge  (2026-06-17)
 
 ## Corpus Check
-- 67 files · ~16,464 words
+- 67 files · ~16,490 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 740 nodes · 1277 edges · 62 communities (49 shown, 13 thin omitted)
+- 742 nodes · 1280 edges · 62 communities (50 shown, 12 thin omitted)
 - Extraction: 77% EXTRACTED · 23% INFERRED · 0% AMBIGUOUS · INFERRED: 290 edges (avg confidence: 0.59)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b8aad3cd`
+- Built from commit: `bfb0f1ea`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -94,7 +94,7 @@
 - **Training IPC Pipeline (Worker → Queue → Controller → UI)** — dev_phase2_pytorch_training_trainingworker, dev_phase2_pytorch_training_metricsemitter, dev_phase2_pytorch_training_trainingmessage, dev_phase2_pytorch_training_trainingcontroller, dev_phase4_live_monitoring_hookmanager, dev_phase4_live_monitoring_ringbuffer, dev_phase4_live_monitoring_live_graph_update [INFERRED 0.85]
 - **Graph Editor MVC Architecture** — dev_phase1_project_graph_graph, dev_phase1_project_graph_graphscene, dev_phase1_project_graph_graphview, dev_phase1_project_graph_nodeitem, dev_phase1_project_graph_edgeitem, dev_phase1_project_graph_command_pattern [EXTRACTED 1.00]
 
-## Communities (62 total, 13 thin omitted)
+## Communities (62 total, 12 thin omitted)
 
 ### Community 0 - "Project Docs & API Reference"
 Cohesion: 0.22
@@ -161,8 +161,8 @@ Cohesion: 0.25
 Nodes (7): C++, Code standards, Commit convention, Contributing, Python, Running checks, Workflow
 
 ### Community 37 - "Community 37"
-Cohesion: 0.17
-Nodes (19): Edge, Edge, Node, Port, A typed connection point on a node.      Attributes:         id: Unique identifi, A single operation in the computation graph.      Attributes:         id: UUID s, A directed connection between two ports.      Attributes:         id: UUID strin, Node (+11 more)
+Cohesion: 0.19
+Nodes (13): Edge, Node, A single operation in the computation graph.      Attributes:         id: UUID s, A directed connection between two ports.      Attributes:         id: UUID strin, QGraphicsSceneContextMenuEvent, QPainter, QRectF, QStyleOptionGraphicsItem (+5 more)
 
 ### Community 38 - "Community 38"
 Cohesion: 0.08
@@ -185,8 +185,8 @@ Cohesion: 0.09
 Nodes (9): GraphScene, GraphView, GraphScene, QGraphicsScene, QGraphicsView, QMouseEvent, QWheelEvent, Graph (+1 more)
 
 ### Community 52 - "Community 52"
-Cohesion: 0.08
-Nodes (45): EdgeId, Graph, Add a node to the graph. Silently ignored if the id already exists.          Arg, Remove a node and all edges that reference it.          Args:             node_i, Add an edge to the graph. Silently ignored if the id already exists.          Ar, Remove an edge. No-op if the edge does not exist.          Args:             edg, Return the node for the given id, or None if not found.          Args:, Return the edge for the given id, or None if not found.          Args: (+37 more)
+Cohesion: 0.07
+Nodes (49): EdgeId, ComponentDefinition, ComponentLibrary, Graph, Add a node to the graph. Silently ignored if the id already exists.          Arg, Remove a node and all edges that reference it.          Args:             node_i, Add an edge to the graph. Silently ignored if the id already exists.          Ar, Remove an edge. No-op if the edge does not exist.          Args:             edg (+41 more)
 
 ### Community 53 - "Community 53"
 Cohesion: 0.11
@@ -196,9 +196,13 @@ Nodes (47): GraphValidator, Detect cycles using Kahn's algorithm (via `Graph.top
 Cohesion: 0.09
 Nodes (47): Any, GraphSerializer, Upgrade ``data`` from an older schema version to `SCHEMA_VERSION`.          Add, Recursively convert Enum → int and tuple → list for JSON compatibility., Serializes and deserializes a `Graph` to/from JSON.      The JSON file format in, Convert a `Graph` to a JSON-serializable dict.          Enum values are stored a, Reconstruct a `Graph` from a deserialized dict.          Calls `_migrate` automa, Write the graph to a JSON file.          Creates parent directories automaticall (+39 more)
 
+### Community 55 - "Community 55"
+Cohesion: 0.50
+Nodes (4): Feat, Feat, v0.2.0 (2026-06-17), v0.3.0 (2026-06-17)
+
 ### Community 56 - "Community 56"
-Cohesion: 0.06
-Nodes (28): Enum, DataType, PortDirection, Direction of a port on a node., Data type flowing through a port connection., build_default_registry(), NodeDefinition, NodeRegistry (+20 more)
+Cohesion: 0.07
+Nodes (22): build_default_registry(), NodeDefinition, NodeRegistry, PortDefinition, Return all definitions whose category matches *category*.          Args:, Static description of a port slot on a node type.      Attributes:         id: U, Build and return a `NodeRegistry` pre-populated with all Phase-1 node types., Immutable descriptor for a node type registered in a `NodeRegistry`.      Attrib (+14 more)
 
 ### Community 57 - "Community 57"
 Cohesion: 0.18
@@ -213,22 +217,22 @@ Cohesion: 0.19
 Nodes (5): EdgeDraftItem, EdgeItem, QGraphicsPathItem, QPointF, Edge
 
 ### Community 60 - "Community 60"
-Cohesion: 0.31
-Nodes (4): ComponentDefinition, ComponentLibrary, Graph, NodeId
+Cohesion: 0.25
+Nodes (12): Edge, Enum, DataType, Port, PortDirection, Direction of a port on a node., Data type flowing through a port connection., A typed connection point on a node.      Attributes:         id: Unique identifi (+4 more)
 
 ## Knowledge Gaps
-- **203 isolated node(s):** `DataType`, `Port`, `Node`, `Edge`, `Feat` (+198 more)
+- **203 isolated node(s):** `Feat`, `DataType`, `Port`, `Node`, `Edge` (+198 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Graph` connect `Community 52` to `Training Config & Experiment Objects`, `Community 37`, `Community 50`, `Community 53`, `Community 54`, `Community 56`, `Community 58`, `Community 60`, `Community 61`?**
-  _High betweenness centrality (0.116) - this node is a cross-community bridge._
-- **Why does `GraphSerializer` connect `Community 54` to `Community 56`, `Community 52`?**
-  _High betweenness centrality (0.054) - this node is a cross-community bridge._
-- **Why does `PortDirection` connect `Community 56` to `Community 53`, `Community 52`, `Community 37`, `Community 54`?**
+- **Why does `Graph` connect `Community 52` to `Training Config & Experiment Objects`, `Community 37`, `Community 50`, `Community 53`, `Community 54`, `Community 58`, `Community 60`, `Community 61`?**
+  _High betweenness centrality (0.115) - this node is a cross-community bridge._
+- **Why does `GraphSerializer` connect `Community 54` to `Community 60`, `Community 52`?**
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
+- **Why does `PortDirection` connect `Community 60` to `Community 53`, `Community 52`, `Community 37`, `Community 54`?**
   _High betweenness centrality (0.039) - this node is a cross-community bridge._
 - **Are the 65 inferred relationships involving `Graph` (e.g. with `Edge` and `AddEdgeCommand`) actually correct?**
   _`Graph` has 65 INFERRED edges - model-reasoned connections that need verification._
