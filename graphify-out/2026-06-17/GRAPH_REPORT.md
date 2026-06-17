@@ -1,16 +1,16 @@
 # Graph Report - NeuroForge  (2026-06-17)
 
 ## Corpus Check
-- 61 files · ~11,904 words
+- 62 files · ~12,033 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 540 nodes · 815 edges · 55 communities (42 shown, 13 thin omitted)
-- Extraction: 75% EXTRACTED · 25% INFERRED · 0% AMBIGUOUS · INFERRED: 201 edges (avg confidence: 0.51)
+- 553 nodes · 827 edges · 56 communities (44 shown, 12 thin omitted)
+- Extraction: 76% EXTRACTED · 24% INFERRED · 0% AMBIGUOUS · INFERRED: 201 edges (avg confidence: 0.51)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `16158abb`
+- Built from commit: `d6da91d8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -51,6 +51,7 @@
 - [[_COMMUNITY_Community 52|Community 52]]
 - [[_COMMUNITY_Community 53|Community 53]]
 - [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Graph` - 48 edges
@@ -87,7 +88,7 @@
 - **Training IPC Pipeline (Worker → Queue → Controller → UI)** — dev_phase2_pytorch_training_trainingworker, dev_phase2_pytorch_training_metricsemitter, dev_phase2_pytorch_training_trainingmessage, dev_phase2_pytorch_training_trainingcontroller, dev_phase4_live_monitoring_hookmanager, dev_phase4_live_monitoring_ringbuffer, dev_phase4_live_monitoring_live_graph_update [INFERRED 0.85]
 - **Graph Editor MVC Architecture** — dev_phase1_project_graph_graph, dev_phase1_project_graph_graphscene, dev_phase1_project_graph_graphview, dev_phase1_project_graph_nodeitem, dev_phase1_project_graph_edgeitem, dev_phase1_project_graph_command_pattern [EXTRACTED 1.00]
 
-## Communities (55 total, 13 thin omitted)
+## Communities (56 total, 12 thin omitted)
 
 ### Community 0 - "Project Docs & API Reference"
 Cohesion: 0.22
@@ -165,6 +166,14 @@ Nodes (35): Project, ProjectConfig, Return the directory where graph JSON files 
 Cohesion: 0.50
 Nodes (3): main(), MainWindow, QMainWindow
 
+### Community 42 - "Community 42"
+Cohesion: 0.25
+Nodes (7): commands, components, model, neuroforge.graph, registry, serializer, validator
+
+### Community 47 - "Community 47"
+Cohesion: 0.40
+Nodes (4): graph_editor.items, graph_editor.scene, graph_editor.view, neuroforge.ui
+
 ### Community 50 - "Community 50"
 Cohesion: 0.09
 Nodes (8): GraphScene, GraphView, GraphScene, QGraphicsScene, QGraphicsView, QMouseEvent, QWheelEvent, NodeId
@@ -182,19 +191,19 @@ Cohesion: 0.33
 Nodes (4): GraphSerializer, Any, Graph, Path
 
 ## Knowledge Gaps
-- **191 isolated node(s):** `What is NeuroForge?`, `Navigation`, `CI Reports`, `Rôle de Claude dans ce projet`, `Workflow TDD` (+186 more)
+- **199 isolated node(s):** `Feat`, `project`, `neuroforge.datasets`, `model`, `validator` (+194 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **12 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Graph` connect `Training Config & Experiment Objects` to `Community 37`, `Community 50`, `Community 52`, `Community 53`, `Community 54`?**
-  _High betweenness centrality (0.031) - this node is a cross-community bridge._
+  _High betweenness centrality (0.029) - this node is a cross-community bridge._
 - **Why does `GraphScene` connect `Community 50` to `Training Config & Experiment Objects`?**
-  _High betweenness centrality (0.028) - this node is a cross-community bridge._
-- **Why does `Edge` connect `Training Config & Experiment Objects` to `Community 50`, `Community 52`, `Community 37`?**
   _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Why does `Edge` connect `Training Config & Experiment Objects` to `Community 50`, `Community 52`, `Community 37`?**
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Are the 34 inferred relationships involving `Graph` (e.g. with `AddEdgeCommand` and `AddNodeCommand`) actually correct?**
   _`Graph` has 34 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 38 inferred relationships involving `Edge` (e.g. with `AddEdgeCommand` and `AddNodeCommand`) actually correct?**

@@ -295,8 +295,8 @@
     "semantic_hash": ""
   },
   "src/neuroforge/graph/model.py": {
-    "mtime": 1781720800.4993455,
-    "ast_hash": "82b7f8f7c533dea25a2736c3116cdee6",
+    "mtime": 1781725539.8444772,
+    "ast_hash": "74d5db347762aeca66262381611823ac",
     "semantic_hash": ""
   },
   "src/neuroforge/graph/registry.py": {
@@ -342,6 +342,11 @@
   "CHANGELOG.md": {
     "mtime": 1781723594.7261815,
     "ast_hash": "4e48fd14f3b56e42f9ee92e286890758",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_graph_model.py": {
+    "mtime": 1781725539.823477,
+    "ast_hash": "4c6c4f3c6c289a2bc2b41df6abbee081",
     "semantic_hash": ""
   }
 }
