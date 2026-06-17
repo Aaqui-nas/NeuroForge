@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "neuroforge"
-version = "0.3.0"
+version = "0.4.0"
 description = "Visual neural network designer with PyTorch backend"
 requires-python = ">=3.11"
 dependencies = [

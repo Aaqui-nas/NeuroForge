@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "src/neuroforge/__main__.py": {
-    "mtime": 1781733407.1354527,
-    "ast_hash": "fc2beff520ba9b90b55d5d1008c03769",
+    "mtime": 1781736761.6410794,
+    "ast_hash": "ca5cdb007167547449ade904641cdcf0",
     "semantic_hash": ""
   },
   ".github/workflows/ci.yml": {
@@ -285,18 +285,18 @@
     "semantic_hash": ""
   },
   "src/neuroforge/graph/commands.py": {
-    "mtime": 1781720818.9809864,
-    "ast_hash": "ecff87f17837d7aa21caef5fb57cd81d",
+    "mtime": 1781736661.6635673,
+    "ast_hash": "f841d7bc0ffb8c2558b732bb7ce6c58f",
     "semantic_hash": ""
   },
   "src/neuroforge/graph/components.py": {
-    "mtime": 1781720823.332528,
-    "ast_hash": "9ed18c91cd3b350eb2024aac88409729",
+    "mtime": 1781736842.8234892,
+    "ast_hash": "4b5a593dbe25b984ea5a537b8a8469ca",
     "semantic_hash": ""
   },
   "src/neuroforge/graph/model.py": {
-    "mtime": 1781725539.8444772,
-    "ast_hash": "74d5db347762aeca66262381611823ac",
+    "mtime": 1781736236.4223888,
+    "ast_hash": "9b4d03d5e7a87d50ecab9abe83c4c749",
     "semantic_hash": ""
   },
   "src/neuroforge/graph/registry.py": {
@@ -320,18 +320,18 @@
     "semantic_hash": ""
   },
   "src/neuroforge/ui/graph_editor/items.py": {
-    "mtime": 1781733497.804955,
-    "ast_hash": "1f5bf26acfd5339d23f8aad4280d2622",
+    "mtime": 1781736868.9866292,
+    "ast_hash": "8cc8edd4356e4ebdb0254e00f334a79a",
     "semantic_hash": ""
   },
   "src/neuroforge/ui/graph_editor/scene.py": {
-    "mtime": 1781732737.7992604,
-    "ast_hash": "c3ab6d1e384b0d2aae561d128cfdfa51",
+    "mtime": 1781736717.0303473,
+    "ast_hash": "796f1047ab73e7c5774dd2e60c4b1408",
     "semantic_hash": ""
   },
   "src/neuroforge/ui/graph_editor/view.py": {
-    "mtime": 1781733506.4680037,
-    "ast_hash": "420c07ba05815acca23667360c1c092f",
+    "mtime": 1781736151.4229596,
+    "ast_hash": "31362252701f686b31d7e9d9ce22e7dc",
     "semantic_hash": ""
   },
   "tests/unit/test_project.py": {
@@ -360,8 +360,8 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1781729826.3505187,
-    "ast_hash": "0fcc8665e572ab7be3dc76db735a1775",
+    "mtime": 1781734329.3342514,
+    "ast_hash": "9581fdadf14509aefeb00259b87a4bbd",
     "semantic_hash": ""
   },
   "tests/unit/test_node_registry.py": {
@@ -372,6 +372,26 @@
   "tests/unit/test_graph_editor.py": {
     "mtime": 1781733561.4383116,
     "ast_hash": "9a7cfcf0181f787c76a98bf9ac270119",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/ui/palette.py": {
+    "mtime": 1781737050.1181762,
+    "ast_hash": "97b6ba0308e9c69d2a1d27bd45b33485",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_commands.py": {
+    "mtime": 1781737050.1181762,
+    "ast_hash": "7f36b62f35cf6a70695df769138961fd",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_components.py": {
+    "mtime": 1781737050.118357,
+    "ast_hash": "912427365b911e7606a7cbfe58d40237",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_palette.py": {
+    "mtime": 1781736873.3196516,
+    "ast_hash": "f9673c08f331f784884f0996abf7383f",
     "semantic_hash": ""
   }
 }
