@@ -1,3 +1,5 @@
 # neuroforge.core
 
-::: neuroforge.core
+## project
+
+::: neuroforge.core.project

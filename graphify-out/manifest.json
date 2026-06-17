@@ -278,5 +278,65 @@
     "mtime": 1781565099.0918486,
     "ast_hash": "7dd8363f612248757d52f02ffe9592a9",
     "semantic_hash": ""
+  },
+  "src/neuroforge/core/project.py": {
+    "mtime": 1781722997.8519447,
+    "ast_hash": "3158fb99eb8f7e3df0b177ac06c8d1f4",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/graph/commands.py": {
+    "mtime": 1781720818.9809864,
+    "ast_hash": "ecff87f17837d7aa21caef5fb57cd81d",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/graph/components.py": {
+    "mtime": 1781720823.332528,
+    "ast_hash": "9ed18c91cd3b350eb2024aac88409729",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/graph/model.py": {
+    "mtime": 1781720800.4993455,
+    "ast_hash": "82b7f8f7c533dea25a2736c3116cdee6",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/graph/registry.py": {
+    "mtime": 1781720812.8410203,
+    "ast_hash": "094fa8797779f3aca5416fbd546b8094",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/graph/serializer.py": {
+    "mtime": 1781720808.2271357,
+    "ast_hash": "0fbbf42c038470be6aad24dfb59280e1",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/graph/validator.py": {
+    "mtime": 1781720803.931724,
+    "ast_hash": "a7f86666aeb56d9b297873e70f8b92fa",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/ui/graph_editor/__init__.py": {
+    "mtime": 1781720657.4473991,
+    "ast_hash": "73f82ac02b6e7e4705232a021204317e",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/ui/graph_editor/items.py": {
+    "mtime": 1781720845.1081798,
+    "ast_hash": "4d1b2200b71b259aaa62f973e58b3a2b",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/ui/graph_editor/scene.py": {
+    "mtime": 1781720827.8687346,
+    "ast_hash": "b88eb6a863b52802ffd564c2e5b7b7a4",
+    "semantic_hash": ""
+  },
+  "src/neuroforge/ui/graph_editor/view.py": {
+    "mtime": 1781720834.8280878,
+    "ast_hash": "1cb4b744642dec57d723e1113123340d",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_project.py": {
+    "mtime": 1781722997.8519447,
+    "ast_hash": "193759fae08eca88e42518b98e5f958b",
+    "semantic_hash": ""
   }
 }
