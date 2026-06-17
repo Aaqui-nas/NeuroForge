@@ -305,8 +305,8 @@
     "semantic_hash": ""
   },
   "src/neuroforge/graph/serializer.py": {
-    "mtime": 1781720808.2271357,
-    "ast_hash": "0fbbf42c038470be6aad24dfb59280e1",
+    "mtime": 1781726956.8690863,
+    "ast_hash": "b8c93c6ac2a1ace501072cc508827fc5",
     "semantic_hash": ""
   },
   "src/neuroforge/graph/validator.py": {
@@ -347,6 +347,11 @@
   "tests/unit/test_graph_model.py": {
     "mtime": 1781725539.823477,
     "ast_hash": "4c6c4f3c6c289a2bc2b41df6abbee081",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_graph_serializer.py": {
+    "mtime": 1781726886.448753,
+    "ast_hash": "93c5854de376763fc8c92802ba8ecdda",
     "semantic_hash": ""
   }
 }

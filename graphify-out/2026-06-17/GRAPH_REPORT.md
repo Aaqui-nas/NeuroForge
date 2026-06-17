@@ -1,16 +1,16 @@
 # Graph Report - NeuroForge  (2026-06-17)
 
 ## Corpus Check
-- 62 files · ~12,033 words
+- 63 files · ~13,208 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 553 nodes · 827 edges · 56 communities (44 shown, 12 thin omitted)
-- Extraction: 76% EXTRACTED · 24% INFERRED · 0% AMBIGUOUS · INFERRED: 201 edges (avg confidence: 0.51)
+- 604 nodes · 906 edges · 56 communities (44 shown, 12 thin omitted)
+- Extraction: 79% EXTRACTED · 21% INFERRED · 0% AMBIGUOUS · INFERRED: 194 edges (avg confidence: 0.55)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d6da91d8`
+- Built from commit: `79b4aa7b`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -54,28 +54,28 @@
 - [[_COMMUNITY_Community 55|Community 55]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `Graph` - 48 edges
-2. `Edge` - 44 edges
-3. `Node` - 42 edges
-4. `NodeId` - 35 edges
-5. `EdgeId` - 29 edges
-6. `Port` - 22 edges
-7. `GraphScene` - 22 edges
-8. `Command` - 19 edges
-9. `NodeItem` - 18 edges
+1. `Graph` - 81 edges
+2. `Edge` - 48 edges
+3. `Node` - 46 edges
+4. `Port` - 26 edges
+5. `GraphScene` - 20 edges
+6. `make_edge()` - 19 edges
+7. `NodeItem` - 18 edges
+8. `make_node()` - 17 edges
+9. `Command` - 17 edges
 10. `GraphView` - 14 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Path` --uses--> `ProjectConfig`  [INFERRED]
-  tests/unit/test_project.py → src/neuroforge/core/project.py
-- `test_project_config_default_format_version()` --calls--> `ProjectConfig`  [INFERRED]
-  tests/unit/test_project.py → src/neuroforge/core/project.py
-- `test_project_config_is_frozen()` --calls--> `ProjectConfig`  [INFERRED]
-  tests/unit/test_project.py → src/neuroforge/core/project.py
-- `Path` --uses--> `Project`  [INFERRED]
-  tests/unit/test_project.py → src/neuroforge/core/project.py
-- `ComponentDefinition` --uses--> `Graph`  [INFERRED]
-  src/neuroforge/graph/components.py → src/neuroforge/graph/model.py
+- `Edge` --uses--> `Node`  [INFERRED]
+  tests/unit/test_graph_model.py → src/neuroforge/graph/model.py
+- `Node` --uses--> `Node`  [INFERRED]
+  tests/unit/test_graph_model.py → src/neuroforge/graph/model.py
+- `Port` --uses--> `Node`  [INFERRED]
+  tests/unit/test_graph_model.py → src/neuroforge/graph/model.py
+- `PortDirection` --uses--> `Node`  [INFERRED]
+  tests/unit/test_graph_model.py → src/neuroforge/graph/model.py
+- `Edge` --uses--> `Graph`  [INFERRED]
+  tests/unit/test_graph_model.py → src/neuroforge/graph/model.py
 
 ## Import Cycles
 - None detected.
@@ -107,8 +107,8 @@ Cohesion: 0.08
 Nodes (25): 5.1 — Gestion des connexions SSH, 5.2 — Synchronisation de fichiers distante, 5.3 — Lancement d'entraînement distant et rapatriement de métriques, 5.4 — Transfert de checkpoints, 5.5 — Profiling avancé, Affichage dans NeuroForge, Algorithme de sync intelligente, Approche (+17 more)
 
 ### Community 4 - "Training Config & Experiment Objects"
-Cohesion: 0.08
-Nodes (26): ABC, AddEdgeCommand, AddNodeCommand, Command, CommandHistory, GroupNodesCommand, MacroCommand, MoveNodeCommand (+18 more)
+Cohesion: 0.06
+Nodes (20): ABC, AddEdgeCommand, AddNodeCommand, Command, CommandHistory, GroupNodesCommand, MacroCommand, MoveNodeCommand (+12 more)
 
 ### Community 7 - "C++ Metrics Bindings"
 Cohesion: 0.50
@@ -155,8 +155,8 @@ Cohesion: 0.25
 Nodes (7): C++, Code standards, Commit convention, Contributing, Python, Running checks, Workflow
 
 ### Community 37 - "Community 37"
-Cohesion: 0.07
-Nodes (23): ComponentDefinition, ComponentLibrary, EdgeDraftItem, EdgeItem, NodeItem, PortItem, Port, Port (+15 more)
+Cohesion: 0.05
+Nodes (41): Edge, Enum, ComponentDefinition, ComponentLibrary, EdgeDraftItem, EdgeItem, NodeItem, PortItem (+33 more)
 
 ### Community 38 - "Community 38"
 Cohesion: 0.08
@@ -175,12 +175,12 @@ Cohesion: 0.40
 Nodes (4): graph_editor.items, graph_editor.scene, graph_editor.view, neuroforge.ui
 
 ### Community 50 - "Community 50"
-Cohesion: 0.09
-Nodes (8): GraphScene, GraphView, GraphScene, QGraphicsScene, QGraphicsView, QMouseEvent, QWheelEvent, NodeId
+Cohesion: 0.08
+Nodes (12): GraphScene, GraphView, GraphScene, QGraphicsScene, QGraphicsView, QMouseEvent, QWheelEvent, Edge (+4 more)
 
 ### Community 52 - "Community 52"
-Cohesion: 0.31
-Nodes (7): Enum, DataType, PortDirection, build_default_registry(), NodeDefinition, NodeRegistry, PortDefinition
+Cohesion: 0.10
+Nodes (41): EdgeId, Graph, Remove a node and all edges that reference it.          Args:             node_i, Remove an edge. No-op if the edge does not exist.          Args:             edg, Return the node for the given id, or None if not found.          Args:, Return the edge for the given id, or None if not found.          Args:, Return all edges whose source is the given node.          Args:             node, Return all edges whose destination is the given node.          Args: (+33 more)
 
 ### Community 53 - "Community 53"
 Cohesion: 0.38
@@ -198,17 +198,17 @@ Nodes (4): GraphSerializer, Any, Graph, Path
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Graph` connect `Training Config & Experiment Objects` to `Community 37`, `Community 50`, `Community 52`, `Community 53`, `Community 54`?**
+- **Why does `Graph` connect `Community 52` to `Training Config & Experiment Objects`, `Community 37`, `Community 50`, `Community 53`, `Community 54`?**
+  _High betweenness centrality (0.080) - this node is a cross-community bridge._
+- **Why does `Edge` connect `Community 37` to `Community 50`, `Training Config & Experiment Objects`, `Community 52`?**
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+- **Why does `GraphScene` connect `Community 50` to `Training Config & Experiment Objects`, `Community 52`, `Community 37`?**
   _High betweenness centrality (0.029) - this node is a cross-community bridge._
-- **Why does `GraphScene` connect `Community 50` to `Training Config & Experiment Objects`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
-- **Why does `Edge` connect `Training Config & Experiment Objects` to `Community 50`, `Community 52`, `Community 37`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
-- **Are the 34 inferred relationships involving `Graph` (e.g. with `AddEdgeCommand` and `AddNodeCommand`) actually correct?**
-  _`Graph` has 34 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 38 inferred relationships involving `Edge` (e.g. with `AddEdgeCommand` and `AddNodeCommand`) actually correct?**
-  _`Edge` has 38 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 38 inferred relationships involving `Node` (e.g. with `AddEdgeCommand` and `AddNodeCommand`) actually correct?**
-  _`Node` has 38 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 30 inferred relationships involving `NodeId` (e.g. with `AddEdgeCommand` and `AddNodeCommand`) actually correct?**
-  _`NodeId` has 30 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 66 inferred relationships involving `Graph` (e.g. with `Edge` and `AddEdgeCommand`) actually correct?**
+  _`Graph` has 66 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 41 inferred relationships involving `Edge` (e.g. with `Edge` and `AddEdgeCommand`) actually correct?**
+  _`Edge` has 41 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 41 inferred relationships involving `Node` (e.g. with `Edge` and `AddEdgeCommand`) actually correct?**
+  _`Node` has 41 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 23 inferred relationships involving `Port` (e.g. with `Edge` and `ComponentDefinition`) actually correct?**
+  _`Port` has 23 INFERRED edges - model-reasoned connections that need verification._
