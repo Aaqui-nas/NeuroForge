@@ -1,16 +1,16 @@
 # Graph Report - NeuroForge  (2026-06-16)
 
 ## Corpus Check
-- 48 files · ~9,135 words
+- 49 files · ~9,933 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 307 nodes · 261 edges · 52 communities (39 shown, 13 thin omitted)
+- 311 nodes · 267 edges · 52 communities (39 shown, 13 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.95)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e7dd1997`
+- Built from commit: `ce24c970`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -62,6 +62,8 @@
 10. `Core Concepts` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `tmp_project_dir()` --references--> `Path`  [EXTRACTED]
+  tests/conftest.py → scripts/theme_reports.py
 - `C++ Tests CMake (placeholder)` --references--> `_storage pybind11 CMake Target`  [EXTRACTED]
   tests/cpp/CMakeLists.txt → src/cpp/storage/CMakeLists.txt
 - `NeuroForge` --references--> `Installation`  [EXTRACTED]
@@ -107,8 +109,8 @@ Cohesion: 0.50
 Nodes (3): _metrics, PYBIND11_MODULE(), m
 
 ### Community 8 - "Test Infrastructure"
-Cohesion: 0.50
-Nodes (3): Path, Temporary directory simulating a NeuroForge project root., tmp_project_dir()
+Cohesion: 0.32
+Nodes (6): Path, inject(), Inject the NeuroForge theme into generated HTML reports (htmlcov, graphify)., theme_directory(), Temporary directory simulating a NeuroForge project root., tmp_project_dir()
 
 ### Community 9 - "C++ Storage Bindings"
 Cohesion: 0.50
@@ -116,11 +118,11 @@ Nodes (3): m, _storage, PYBIND11_MODULE()
 
 ### Community 10 - "Node Registry"
 Cohesion: 0.08
-Nodes (25): 2.1 — Inférence de shapes, 2.2 — Générateur de code PyTorch, 2.3 — Gestionnaire de datasets, 2.4 — Configuration d'entraînement, 2.6 — Suivi d'expériences, Algorithme, Algorithme, Approche : génération de texte (string-based) (+17 more)
+Nodes (24): 2.1 — Inférence de shapes, 2.3 — Gestionnaire de datasets, 2.4 — Configuration d'entraînement, 2.5 — Moteur d'entraînement, 2.6 — Suivi d'expériences, Algorithme, Architecture IPC, Composants (+16 more)
 
 ### Community 11 - "Project Model"
 Cohesion: 0.07
-Nodes (28): 1.2 — Modèle de graphe, 1.3 — Sérialisation du graphe, 1.4 — Validation du graphe, 1.6 — Bibliothèque de noeuds, 1.7 — Undo/Redo, 1.8 — Subgraphs & composants réutilisables, Algorithme clé : détection de cycle, Algorithme de création d'un subgraph (+20 more)
+Nodes (29): 1.2 — Modèle de graphe, 1.3 — Sérialisation du graphe, 1.4 — Validation du graphe, 1.5 — Éditeur de graphe UI, 1.6 — Bibliothèque de noeuds, 1.7 — Undo/Redo, Algorithme clé : détection de cycle, Algorithme : courbe de Bézier pour les arêtes (+21 more)
 
 ### Community 12 - "Command Pattern"
 Cohesion: 0.08
@@ -147,8 +149,8 @@ Cohesion: 0.25
 Nodes (7): C++, Code standards, Commit convention, Contributing, Python, Running checks, Workflow
 
 ### Community 37 - "Community 37"
-Cohesion: 0.33
-Nodes (6): 1.5 — Éditeur de graphe UI, Algorithme : courbe de Bézier pour les arêtes, Architecture Qt, Interactions à implémenter, Objectif, Points d'attention
+Cohesion: 0.29
+Nodes (7): 2.2 — Générateur de code PyTorch, Algorithme, Approche : génération de texte (string-based), Gestion des composants réutilisables, Objectif, Points d'attention, Template de sortie
 
 ### Community 38 - "Community 38"
 Cohesion: 0.40
@@ -159,24 +161,24 @@ Cohesion: 0.50
 Nodes (3): main(), MainWindow, QMainWindow
 
 ### Community 50 - "Community 50"
-Cohesion: 0.33
-Nodes (6): 2.5 — Moteur d'entraînement, Architecture IPC, Composants, Objectif, Points d'attention, Queue messages
+Cohesion: 0.40
+Nodes (5): 1.8 — Subgraphs & composants réutilisables, Algorithme de création d'un subgraph, Objectif, Points d'attention, Structure
 
 ## Knowledge Gaps
-- **192 isolated node(s):** `What is NeuroForge?`, `Navigation`, `CI Reports`, `Rôle de Claude dans ce projet`, `Workflow TDD` (+187 more)
+- **191 isolated node(s):** `What is NeuroForge?`, `Navigation`, `CI Reports`, `Rôle de Claude dans ce projet`, `Workflow TDD` (+186 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **13 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Phase 1 — Projet & Éditeur de graphe` connect `Project Model` to `Community 37`, `Community 38`?**
+- **Why does `Phase 1 — Projet & Éditeur de graphe` connect `Project Model` to `Community 50`, `Community 38`?**
   _High betweenness centrality (0.014) - this node is a cross-community bridge._
 - **Why does `Phase 4 — Monitoring live du graphe` connect `Remote Profiling` to `Training Config & Experiment Objects`?**
   _High betweenness centrality (0.012) - this node is a cross-community bridge._
-- **Why does `Phase 2 — Génération PyTorch & Entraînement` connect `Node Registry` to `Community 50`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **What connects `What is NeuroForge?`, `Navigation`, `CI Reports` to the rest of the system?**
+- **Why does `Phase 2 — Génération PyTorch & Entraînement` connect `Node Registry` to `Community 37`?**
+  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **What connects `Inject the NeuroForge theme into generated HTML reports (htmlcov, graphify).`, `What is NeuroForge?`, `Navigation` to the rest of the system?**
   _195 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Graph Data Model` be split into smaller, more focused modules?**
   _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._

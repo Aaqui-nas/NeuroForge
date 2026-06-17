@@ -220,8 +220,8 @@
     "semantic_hash": "5e3bccb2b66abaf8d963752ddb9e5ee2"
   },
   "docs/index.md": {
-    "mtime": 1781561056.279592,
-    "ast_hash": "db2a98784794b204c0be036c1fdf7cea",
+    "mtime": 1781562083.1606884,
+    "ast_hash": "e77e4281a64f29dd7d22e08e408eee76",
     "semantic_hash": ""
   },
   "idea.md": {
@@ -260,13 +260,18 @@
     "semantic_hash": ""
   },
   ".github/workflows/ci.yml": {
-    "mtime": 1781561466.8198535,
-    "ast_hash": "55083163be911f2823abb386acdd725f",
+    "mtime": 1781562771.390037,
+    "ast_hash": "1c0de181e2a5eae22e514030f7815181",
     "semantic_hash": ""
   },
   ".pre-commit-config.yaml": {
     "mtime": 1781561592.6050591,
     "ast_hash": "85463a9a0ee7bf879fc4052299ca92f7",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_smoke.py": {
+    "mtime": 1781562213.568082,
+    "ast_hash": "5f9b838894d6da48bc19c671081924ab",
     "semantic_hash": ""
   }
 }

@@ -1,0 +1,33 @@
+# mypy: disable-error-code="empty-body"
+from __future__ import annotations
+
+from PySide6.QtGui import QMouseEvent, QWheelEvent
+from PySide6.QtWidgets import QGraphicsView
+
+from .scene import GraphScene
+
+ZOOM_FACTOR = 1.15
+ZOOM_MIN = 0.1
+ZOOM_MAX = 10.0
+
+
+class GraphView(QGraphicsView):
+    def __init__(self, scene: GraphScene) -> None: ...
+
+    def wheelEvent(self, event: QWheelEvent) -> None: ...
+
+    def mousePressEvent(self, event: QMouseEvent) -> None: ...
+
+    def mouseMoveEvent(self, event: QMouseEvent) -> None: ...
+
+    def mouseReleaseEvent(self, event: QMouseEvent) -> None: ...
+
+    def zoom_in(self) -> None: ...
+
+    def zoom_out(self) -> None: ...
+
+    def zoom_reset(self) -> None: ...
+
+    def fit_view(self) -> None: ...
+
+    def _apply_zoom(self, factor: float) -> None: ...
