@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from PySide6.QtCore import QPointF, QRectF, Qt
-from PySide6.QtGui import QBrush, QColor, QFont, QPainter, QPainterPath, QPen
+from PySide6.QtGui import QBrush, QColor, QFont, QPainter, QPainterPath, QPen, QTransform
 from PySide6.QtWidgets import (
     QGraphicsEllipseItem,
     QGraphicsItem,
@@ -22,6 +22,7 @@ NODE_PORT_SPACING = 22.0
 BEZIER_TANGENT = 100.0
 
 _COLOR_HEADER = QColor("#4a6fa5")
+_COLOR_HEADER_COMPONENT = QColor("#7a3fa0")
 _COLOR_BODY = QColor("#2b2b2b")
 _COLOR_BORDER = QColor("#666666")
 _COLOR_BORDER_SELECTED = QColor("#ffffff")
@@ -30,9 +31,6 @@ _COLOR_PORT_INPUT = QColor("#88aaff")
 _COLOR_PORT_OUTPUT = QColor("#ffaa44")
 _COLOR_EDGE = QColor("#aaaaaa")
 _COLOR_DRAFT = QColor("#ffffff")
-
-
-# ── PortItem ──────────────────────────────────────────────────────────────────
 
 
 class PortItem(QGraphicsEllipseItem):
@@ -81,11 +79,29 @@ class PortItem(QGraphicsEllipseItem):
                     scene.begin_edge_draft(parent.node_id(), self._port.id)
         event.accept()
 
-    def mouseReleaseEvent(self, event: QGraphicsSceneMouseEvent) -> None:
+    def mouseMoveEvent(self, event: QGraphicsSceneMouseEvent) -> None:
+        scene = self.scene()
+        if scene is not None:
+            from neuroforge.ui.graph_editor.scene import GraphScene
+
+            if isinstance(scene, GraphScene) and scene._edge_draft is not None:
+                scene._edge_draft.update_end(event.scenePos())
         event.accept()
 
+    def mouseReleaseEvent(self, event: QGraphicsSceneMouseEvent) -> None:
+        scene = self.scene()
+        if scene is not None:
+            from neuroforge.ui.graph_editor.scene import GraphScene
 
-# ── NodeItem ──────────────────────────────────────────────────────────────────
+            if isinstance(scene, GraphScene) and scene._edge_draft is not None:
+                hit = scene.itemAt(event.scenePos(), QTransform())
+                if isinstance(hit, PortItem) and hit is not self:
+                    parent = hit.parentItem()
+                    if isinstance(parent, NodeItem):
+                        scene.complete_edge_draft(parent.node_id(), hit.port_id())
+                else:
+                    scene.cancel_edge_draft()
+        event.accept()
 
 
 def _node_height(node: Node) -> float:
@@ -170,26 +186,23 @@ class NodeItem(QGraphicsItem):
         rect = self.boundingRect()
         selected = bool(option.state & QStyle.StateFlag.State_Selected)
 
-        # Body
         painter.setBrush(QBrush(_COLOR_BODY))
         painter.setPen(QPen(_COLOR_BORDER_SELECTED if selected else _COLOR_BORDER, 1.5))
         painter.drawRoundedRect(rect, 4.0, 4.0)
 
-        # Header — draw rounded rect then fill bottom corners so it meets the body cleanly
         header_rect = QRectF(0, 0, NODE_WIDTH, NODE_HEADER_HEIGHT)
-        painter.setBrush(QBrush(_COLOR_HEADER))
+        header_color = _COLOR_HEADER_COMPONENT if self._node.component_id else _COLOR_HEADER
+        painter.setBrush(QBrush(header_color))
         painter.setPen(Qt.PenStyle.NoPen)
         painter.drawRoundedRect(header_rect, 4.0, 4.0)
         painter.drawRect(QRectF(0, NODE_HEADER_HEIGHT / 2, NODE_WIDTH, NODE_HEADER_HEIGHT / 2))
 
-        # Title
         painter.setPen(QPen(_COLOR_TEXT))
         font = QFont()
         font.setBold(True)
         painter.setFont(font)
         painter.drawText(header_rect, Qt.AlignmentFlag.AlignCenter, self._node.name)
 
-        # Port labels
         font.setBold(False)
         painter.setFont(font)
         painter.setPen(QPen(_COLOR_TEXT))
@@ -272,10 +285,19 @@ class NodeItem(QGraphicsItem):
         event.accept()
 
     def contextMenuEvent(self, event: QGraphicsSceneContextMenuEvent) -> None:
+        """Show a context menu with a delete action."""
+        from PySide6.QtWidgets import QMenu
+
+        menu = QMenu()
+        delete_action = menu.addAction("Supprimer")
+        if menu.exec(event.screenPos()) is delete_action:
+            scene = self.scene()
+            if scene is not None:
+                from neuroforge.ui.graph_editor.scene import GraphScene
+
+                if isinstance(scene, GraphScene):
+                    scene.remove_node_item(self._node.id)
         event.accept()
-
-
-# ── EdgeItem ──────────────────────────────────────────────────────────────────
 
 
 class EdgeItem(QGraphicsPathItem):
@@ -334,9 +356,6 @@ class EdgeItem(QGraphicsPathItem):
         return path
 
 
-# ── EdgeDraftItem ─────────────────────────────────────────────────────────────
-
-# Pen is a module-level constant to avoid re-creating it on every mouse-move.
 _DRAFT_PEN = QPen(_COLOR_DRAFT, 2.0, Qt.PenStyle.DashLine)
 
 

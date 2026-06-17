@@ -66,6 +66,7 @@ class Node:
     position: tuple[float, float]
     ports: dict[PortId, Port]
     params: dict[str, Any]
+    component_id: str | None = None
 
 
 @dataclasses.dataclass

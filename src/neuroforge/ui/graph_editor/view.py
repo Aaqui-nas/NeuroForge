@@ -38,7 +38,7 @@ class GraphView(QGraphicsView):
         self.setRenderHint(QPainter.RenderHint.Antialiasing)
         self.setTransformationAnchor(QGraphicsView.ViewportAnchor.AnchorUnderMouse)
         self.setResizeAnchor(QGraphicsView.ViewportAnchor.AnchorViewCenter)
-        self.setDragMode(QGraphicsView.DragMode.NoDrag)
+        self.setDragMode(QGraphicsView.DragMode.RubberBandDrag)
 
     def wheelEvent(self, event: QWheelEvent) -> None:
         """Zoom in or out under the cursor on wheel scroll."""

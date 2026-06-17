@@ -255,8 +255,8 @@
     "semantic_hash": ""
   },
   "src/neuroforge/__main__.py": {
-    "mtime": 1781559828.7070768,
-    "ast_hash": "f601b59a75fe433b95e1b8c2a0550624",
+    "mtime": 1781733407.1354527,
+    "ast_hash": "fc2beff520ba9b90b55d5d1008c03769",
     "semantic_hash": ""
   },
   ".github/workflows/ci.yml": {
@@ -320,18 +320,18 @@
     "semantic_hash": ""
   },
   "src/neuroforge/ui/graph_editor/items.py": {
-    "mtime": 1781720845.1081798,
-    "ast_hash": "4d1b2200b71b259aaa62f973e58b3a2b",
+    "mtime": 1781733497.804955,
+    "ast_hash": "1f5bf26acfd5339d23f8aad4280d2622",
     "semantic_hash": ""
   },
   "src/neuroforge/ui/graph_editor/scene.py": {
-    "mtime": 1781720827.8687346,
-    "ast_hash": "b88eb6a863b52802ffd564c2e5b7b7a4",
+    "mtime": 1781732737.7992604,
+    "ast_hash": "c3ab6d1e384b0d2aae561d128cfdfa51",
     "semantic_hash": ""
   },
   "src/neuroforge/ui/graph_editor/view.py": {
-    "mtime": 1781720834.8280878,
-    "ast_hash": "1cb4b744642dec57d723e1113123340d",
+    "mtime": 1781733506.4680037,
+    "ast_hash": "420c07ba05815acca23667360c1c092f",
     "semantic_hash": ""
   },
   "tests/unit/test_project.py": {
@@ -367,6 +367,11 @@
   "tests/unit/test_node_registry.py": {
     "mtime": 1781731142.9068823,
     "ast_hash": "cb6603ce73fd4b59b3951e44fa41e8fc",
+    "semantic_hash": ""
+  },
+  "tests/unit/test_graph_editor.py": {
+    "mtime": 1781733561.4383116,
+    "ast_hash": "9a7cfcf0181f787c76a98bf9ac270119",
     "semantic_hash": ""
   }
 }

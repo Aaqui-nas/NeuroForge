@@ -103,14 +103,64 @@
   },
   "nodes": [
     {
+      "label": "CHANGELOG.md",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "changelog",
+      "community": 55,
+      "norm_label": "changelog.md"
+    },
+    {
+      "label": "v0.3.0 (2026-06-17)",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "changelog_v0_3_0_2026_06_17",
+      "community": 55,
+      "norm_label": "v0.3.0 (2026-06-17)"
+    },
+    {
+      "label": "Feat",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "changelog_feat",
+      "community": 55,
+      "norm_label": "feat"
+    },
+    {
+      "label": "v0.2.0 (2026-06-17)",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "changelog_v0_2_0_2026_06_17",
+      "community": 55,
+      "norm_label": "v0.2.0 (2026-06-17)"
+    },
+    {
+      "label": "Feat",
+      "file_type": "document",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "changelog_feat_12",
+      "community": 55,
+      "norm_label": "feat"
+    },
+    {
       "label": "registry.py",
       "file_type": "code",
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "graph_registry",
       "community": 56,
-      "norm_label": "registry.py"
+      "norm_label": "registry.py",
+      "id": "graph_registry"
     },
     {
       "label": "PortDefinition",
@@ -118,9 +168,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L10",
       "_origin": "ast",
-      "id": "graph_registry_portdefinition",
       "community": 56,
-      "norm_label": "portdefinition"
+      "norm_label": "portdefinition",
+      "id": "graph_registry_portdefinition"
     },
     {
       "label": "NodeDefinition",
@@ -128,9 +178,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L30",
       "_origin": "ast",
-      "id": "graph_registry_nodedefinition",
       "community": 56,
-      "norm_label": "nodedefinition"
+      "norm_label": "nodedefinition",
+      "id": "graph_registry_nodedefinition"
     },
     {
       "label": "NodeRegistry",
@@ -138,9 +188,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L53",
       "_origin": "ast",
-      "id": "graph_registry_noderegistry",
       "community": 56,
-      "norm_label": "noderegistry"
+      "norm_label": "noderegistry",
+      "id": "graph_registry_noderegistry"
     },
     {
       "label": ".__init__()",
@@ -148,9 +198,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L61",
       "_origin": "ast",
-      "id": "graph_registry_noderegistry_init",
       "community": 56,
-      "norm_label": ".__init__()"
+      "norm_label": ".__init__()",
+      "id": "graph_registry_noderegistry_init"
     },
     {
       "label": ".register()",
@@ -158,9 +208,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L64",
       "_origin": "ast",
-      "id": "graph_registry_noderegistry_register",
       "community": 56,
-      "norm_label": ".register()"
+      "norm_label": ".register()",
+      "id": "graph_registry_noderegistry_register"
     },
     {
       "label": ".get()",
@@ -168,9 +218,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L78",
       "_origin": "ast",
-      "id": "graph_registry_noderegistry_get",
       "community": 56,
-      "norm_label": ".get()"
+      "norm_label": ".get()",
+      "id": "graph_registry_noderegistry_get"
     },
     {
       "label": ".all()",
@@ -178,9 +228,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L93",
       "_origin": "ast",
-      "id": "graph_registry_noderegistry_all",
       "community": 56,
-      "norm_label": ".all()"
+      "norm_label": ".all()",
+      "id": "graph_registry_noderegistry_all"
     },
     {
       "label": ".categories()",
@@ -188,9 +238,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L97",
       "_origin": "ast",
-      "id": "graph_registry_noderegistry_categories",
       "community": 56,
-      "norm_label": ".categories()"
+      "norm_label": ".categories()",
+      "id": "graph_registry_noderegistry_categories"
     },
     {
       "label": ".by_category()",
@@ -198,9 +248,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L101",
       "_origin": "ast",
-      "id": "graph_registry_noderegistry_by_category",
       "community": 56,
-      "norm_label": ".by_category()"
+      "norm_label": ".by_category()",
+      "id": "graph_registry_noderegistry_by_category"
     },
     {
       "label": "_tensor_in()",
@@ -208,9 +258,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L113",
       "_origin": "ast",
-      "id": "graph_registry_tensor_in",
       "community": 56,
-      "norm_label": "_tensor_in()"
+      "norm_label": "_tensor_in()",
+      "id": "graph_registry_tensor_in"
     },
     {
       "label": "_tensor_out()",
@@ -218,9 +268,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L117",
       "_origin": "ast",
-      "id": "graph_registry_tensor_out",
       "community": 56,
-      "norm_label": "_tensor_out()"
+      "norm_label": "_tensor_out()",
+      "id": "graph_registry_tensor_out"
     },
     {
       "label": "build_default_registry()",
@@ -228,9 +278,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L121",
       "_origin": "ast",
-      "id": "graph_registry_build_default_registry",
       "community": 56,
-      "norm_label": "build_default_registry()"
+      "norm_label": "build_default_registry()",
+      "id": "graph_registry_build_default_registry"
     },
     {
       "label": "Static description of a port slot on a node type.      Attributes:         id: U",
@@ -238,9 +288,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L11",
       "_origin": "ast",
-      "id": "graph_registry_rationale_11",
       "community": 56,
-      "norm_label": "static description of a port slot on a node type.      attributes:         id: u"
+      "norm_label": "static description of a port slot on a node type.      attributes:         id: u",
+      "id": "graph_registry_rationale_11"
     },
     {
       "label": "Immutable descriptor for a node type registered in a `NodeRegistry`.      Attrib",
@@ -248,9 +298,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L31",
       "_origin": "ast",
-      "id": "graph_registry_rationale_31",
       "community": 56,
-      "norm_label": "immutable descriptor for a node type registered in a `noderegistry`.      attrib"
+      "norm_label": "immutable descriptor for a node type registered in a `noderegistry`.      attrib",
+      "id": "graph_registry_rationale_31"
     },
     {
       "label": "Catalogue that maps node type strings to their `NodeDefinition`.      Use `build",
@@ -258,9 +308,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L54",
       "_origin": "ast",
-      "id": "graph_registry_rationale_54",
       "community": 56,
-      "norm_label": "catalogue that maps node type strings to their `nodedefinition`.      use `build"
+      "norm_label": "catalogue that maps node type strings to their `nodedefinition`.      use `build",
+      "id": "graph_registry_rationale_54"
     },
     {
       "label": "Add a node definition to the registry.          Args:             definition: Th",
@@ -268,9 +318,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L65",
       "_origin": "ast",
-      "id": "graph_registry_rationale_65",
       "community": 56,
-      "norm_label": "add a node definition to the registry.          args:             definition: th"
+      "norm_label": "add a node definition to the registry.          args:             definition: th",
+      "id": "graph_registry_rationale_65"
     },
     {
       "label": "Return the definition registered under *node_type*.          Args:             n",
@@ -278,9 +328,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L79",
       "_origin": "ast",
-      "id": "graph_registry_rationale_79",
       "community": 56,
-      "norm_label": "return the definition registered under *node_type*.          args:             n"
+      "norm_label": "return the definition registered under *node_type*.          args:             n",
+      "id": "graph_registry_rationale_79"
     },
     {
       "label": "Return all registered definitions in insertion order.",
@@ -288,9 +338,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L94",
       "_origin": "ast",
-      "id": "graph_registry_rationale_94",
       "community": 56,
-      "norm_label": "return all registered definitions in insertion order."
+      "norm_label": "return all registered definitions in insertion order.",
+      "id": "graph_registry_rationale_94"
     },
     {
       "label": "Return the deduplicated list of category names present in the registry.",
@@ -298,9 +348,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L98",
       "_origin": "ast",
-      "id": "graph_registry_rationale_98",
       "community": 56,
-      "norm_label": "return the deduplicated list of category names present in the registry."
+      "norm_label": "return the deduplicated list of category names present in the registry.",
+      "id": "graph_registry_rationale_98"
     },
     {
       "label": "Return all definitions whose category matches *category*.          Args:",
@@ -308,9 +358,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L102",
       "_origin": "ast",
-      "id": "graph_registry_rationale_102",
       "community": 56,
-      "norm_label": "return all definitions whose category matches *category*.          args:"
+      "norm_label": "return all definitions whose category matches *category*.          args:",
+      "id": "graph_registry_rationale_102"
     },
     {
       "label": "Build and return a `NodeRegistry` pre-populated with all Phase-1 node types.",
@@ -318,9 +368,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L122",
       "_origin": "ast",
-      "id": "graph_registry_rationale_122",
       "community": 56,
-      "norm_label": "build and return a `noderegistry` pre-populated with all phase-1 node types."
+      "norm_label": "build and return a `noderegistry` pre-populated with all phase-1 node types.",
+      "id": "graph_registry_rationale_122"
     },
     {
       "label": "test_node_registry.py",
@@ -328,9 +378,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "unit_test_node_registry",
       "community": 56,
-      "norm_label": "test_node_registry.py"
+      "norm_label": "test_node_registry.py",
+      "id": "unit_test_node_registry"
     },
     {
       "label": "make_definition()",
@@ -338,9 +388,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "unit_test_node_registry_make_definition",
       "community": 56,
-      "norm_label": "make_definition()"
+      "norm_label": "make_definition()",
+      "id": "unit_test_node_registry_make_definition"
     },
     {
       "label": "NodeDefinition",
@@ -348,9 +398,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L50",
       "_origin": "ast",
-      "id": "nodedefinition",
       "community": 56,
-      "norm_label": "nodedefinition"
+      "norm_label": "nodedefinition",
+      "id": "nodedefinition"
     },
     {
       "label": "TestNodeRegistryRegisterAndGet",
@@ -358,9 +408,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L71",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistryregisterandget",
       "community": 56,
-      "norm_label": "testnoderegistryregisterandget"
+      "norm_label": "testnoderegistryregisterandget",
+      "id": "unit_test_node_registry_testnoderegistryregisterandget"
     },
     {
       "label": ".test_registered_definition_is_retrievable()",
@@ -368,9 +418,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L72",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistryregisterandget_test_registered_definition_is_retrievable",
       "community": 56,
-      "norm_label": ".test_registered_definition_is_retrievable()"
+      "norm_label": ".test_registered_definition_is_retrievable()",
+      "id": "unit_test_node_registry_testnoderegistryregisterandget_test_registered_definition_is_retrievable"
     },
     {
       "label": ".test_get_unknown_type_raises_key_error()",
@@ -378,9 +428,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L78",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistryregisterandget_test_get_unknown_type_raises_key_error",
       "community": 56,
-      "norm_label": ".test_get_unknown_type_raises_key_error()"
+      "norm_label": ".test_get_unknown_type_raises_key_error()",
+      "id": "unit_test_node_registry_testnoderegistryregisterandget_test_get_unknown_type_raises_key_error"
     },
     {
       "label": ".test_register_duplicate_type_raises()",
@@ -388,9 +438,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L83",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistryregisterandget_test_register_duplicate_type_raises",
       "community": 56,
-      "norm_label": ".test_register_duplicate_type_raises()"
+      "norm_label": ".test_register_duplicate_type_raises()",
+      "id": "unit_test_node_registry_testnoderegistryregisterandget_test_register_duplicate_type_raises"
     },
     {
       "label": ".test_multiple_definitions_are_independent()",
@@ -398,9 +448,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L89",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistryregisterandget_test_multiple_definitions_are_independent",
       "community": 56,
-      "norm_label": ".test_multiple_definitions_are_independent()"
+      "norm_label": ".test_multiple_definitions_are_independent()",
+      "id": "unit_test_node_registry_testnoderegistryregisterandget_test_multiple_definitions_are_independent"
     },
     {
       "label": "TestNodeRegistryAll",
@@ -408,9 +458,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L99",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistryall",
       "community": 56,
-      "norm_label": "testnoderegistryall"
+      "norm_label": "testnoderegistryall",
+      "id": "unit_test_node_registry_testnoderegistryall"
     },
     {
       "label": ".test_all_returns_empty_when_nothing_registered()",
@@ -418,9 +468,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L100",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistryall_test_all_returns_empty_when_nothing_registered",
       "community": 56,
-      "norm_label": ".test_all_returns_empty_when_nothing_registered()"
+      "norm_label": ".test_all_returns_empty_when_nothing_registered()",
+      "id": "unit_test_node_registry_testnoderegistryall_test_all_returns_empty_when_nothing_registered"
     },
     {
       "label": ".test_all_returns_all_registered_definitions()",
@@ -428,9 +478,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L103",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistryall_test_all_returns_all_registered_definitions",
       "community": 56,
-      "norm_label": ".test_all_returns_all_registered_definitions()"
+      "norm_label": ".test_all_returns_all_registered_definitions()",
+      "id": "unit_test_node_registry_testnoderegistryall_test_all_returns_all_registered_definitions"
     },
     {
       "label": "TestNodeRegistryCategories",
@@ -438,9 +488,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L114",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistrycategories",
       "community": 56,
-      "norm_label": "testnoderegistrycategories"
+      "norm_label": "testnoderegistrycategories",
+      "id": "unit_test_node_registry_testnoderegistrycategories"
     },
     {
       "label": ".test_categories_returns_empty_when_nothing_registered()",
@@ -448,9 +498,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L115",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_empty_when_nothing_registered",
       "community": 56,
-      "norm_label": ".test_categories_returns_empty_when_nothing_registered()"
+      "norm_label": ".test_categories_returns_empty_when_nothing_registered()",
+      "id": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_empty_when_nothing_registered"
     },
     {
       "label": ".test_categories_are_unique()",
@@ -458,9 +508,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L118",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistrycategories_test_categories_are_unique",
       "community": 56,
-      "norm_label": ".test_categories_are_unique()"
+      "norm_label": ".test_categories_are_unique()",
+      "id": "unit_test_node_registry_testnoderegistrycategories_test_categories_are_unique"
     },
     {
       "label": ".test_categories_returns_all_present_categories()",
@@ -468,9 +518,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L126",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_all_present_categories",
       "community": 56,
-      "norm_label": ".test_categories_returns_all_present_categories()"
+      "norm_label": ".test_categories_returns_all_present_categories()",
+      "id": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_all_present_categories"
     },
     {
       "label": "TestNodeRegistryByCategory",
@@ -478,9 +528,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L133",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistrybycategory",
       "community": 56,
-      "norm_label": "testnoderegistrybycategory"
+      "norm_label": "testnoderegistrybycategory",
+      "id": "unit_test_node_registry_testnoderegistrybycategory"
     },
     {
       "label": ".test_by_category_returns_matching_nodes()",
@@ -488,9 +538,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L134",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_matching_nodes",
       "community": 56,
-      "norm_label": ".test_by_category_returns_matching_nodes()"
+      "norm_label": ".test_by_category_returns_matching_nodes()",
+      "id": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_matching_nodes"
     },
     {
       "label": ".test_by_category_returns_empty_for_unknown_category()",
@@ -498,9 +548,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L147",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_empty_for_unknown_category",
       "community": 56,
-      "norm_label": ".test_by_category_returns_empty_for_unknown_category()"
+      "norm_label": ".test_by_category_returns_empty_for_unknown_category()",
+      "id": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_empty_for_unknown_category"
     },
     {
       "label": "TestBuildDefaultRegistry",
@@ -508,9 +558,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L156",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry",
       "community": 56,
-      "norm_label": "testbuilddefaultregistry"
+      "norm_label": "testbuilddefaultregistry",
+      "id": "unit_test_node_registry_testbuilddefaultregistry"
     },
     {
       "label": ".setup_method()",
@@ -518,9 +568,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L157",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_setup_method",
       "community": 56,
-      "norm_label": ".setup_method()"
+      "norm_label": ".setup_method()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_setup_method"
     },
     {
       "label": ".test_returns_node_registry()",
@@ -528,9 +578,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L160",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_returns_node_registry",
       "community": 56,
-      "norm_label": ".test_returns_node_registry()"
+      "norm_label": ".test_returns_node_registry()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_returns_node_registry"
     },
     {
       "label": ".test_all_expected_types_are_registered()",
@@ -538,9 +588,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L163",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_all_expected_types_are_registered",
       "community": 56,
-      "norm_label": ".test_all_expected_types_are_registered()"
+      "norm_label": ".test_all_expected_types_are_registered()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_all_expected_types_are_registered"
     },
     {
       "label": ".test_all_expected_categories_are_present()",
@@ -548,9 +598,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L167",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_all_expected_categories_are_present",
       "community": 56,
-      "norm_label": ".test_all_expected_categories_are_present()"
+      "norm_label": ".test_all_expected_categories_are_present()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_all_expected_categories_are_present"
     },
     {
       "label": ".test_no_duplicate_types()",
@@ -558,9 +608,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L170",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_no_duplicate_types",
       "community": 56,
-      "norm_label": ".test_no_duplicate_types()"
+      "norm_label": ".test_no_duplicate_types()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_no_duplicate_types"
     },
     {
       "label": ".test_every_node_has_at_least_one_port()",
@@ -568,9 +618,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L174",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_every_node_has_at_least_one_port",
       "community": 56,
-      "norm_label": ".test_every_node_has_at_least_one_port()"
+      "norm_label": ".test_every_node_has_at_least_one_port()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_every_node_has_at_least_one_port"
     },
     {
       "label": ".test_default_params_is_dict()",
@@ -578,9 +628,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L178",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_default_params_is_dict",
       "community": 56,
-      "norm_label": ".test_default_params_is_dict()"
+      "norm_label": ".test_default_params_is_dict()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_default_params_is_dict"
     },
     {
       "label": ".test_param_schema_is_dict()",
@@ -588,9 +638,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L184",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_param_schema_is_dict",
       "community": 56,
-      "norm_label": ".test_param_schema_is_dict()"
+      "norm_label": ".test_param_schema_is_dict()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_param_schema_is_dict"
     },
     {
       "label": ".test_input_node_has_output_port()",
@@ -598,9 +648,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L188",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_input_node_has_output_port",
       "community": 56,
-      "norm_label": ".test_input_node_has_output_port()"
+      "norm_label": ".test_input_node_has_output_port()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_input_node_has_output_port"
     },
     {
       "label": ".test_output_node_has_input_port()",
@@ -608,9 +658,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L192",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_output_node_has_input_port",
       "community": 56,
-      "norm_label": ".test_output_node_has_input_port()"
+      "norm_label": ".test_output_node_has_input_port()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_output_node_has_input_port"
     },
     {
       "label": ".test_linear_has_expected_params()",
@@ -618,9 +668,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L196",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_linear_has_expected_params",
       "community": 56,
-      "norm_label": ".test_linear_has_expected_params()"
+      "norm_label": ".test_linear_has_expected_params()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_linear_has_expected_params"
     },
     {
       "label": ".test_conv2d_has_expected_params()",
@@ -628,9 +678,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L201",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_conv2d_has_expected_params",
       "community": 56,
-      "norm_label": ".test_conv2d_has_expected_params()"
+      "norm_label": ".test_conv2d_has_expected_params()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_conv2d_has_expected_params"
     },
     {
       "label": ".test_dropout_has_p_param()",
@@ -638,9 +688,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L207",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_dropout_has_p_param",
       "community": 56,
-      "norm_label": ".test_dropout_has_p_param()"
+      "norm_label": ".test_dropout_has_p_param()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_dropout_has_p_param"
     },
     {
       "label": ".test_all_tensor_ports_have_tensor_data_type()",
@@ -648,9 +698,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L211",
       "_origin": "ast",
-      "id": "unit_test_node_registry_testbuilddefaultregistry_test_all_tensor_ports_have_tensor_data_type",
       "community": 56,
-      "norm_label": ".test_all_tensor_ports_have_tensor_data_type()"
+      "norm_label": ".test_all_tensor_ports_have_tensor_data_type()",
+      "id": "unit_test_node_registry_testbuilddefaultregistry_test_all_tensor_ports_have_tensor_data_type"
     },
     {
       "label": "validator.py",
@@ -908,7 +958,7 @@
       "source_file": "tests/unit/test_graph_validator.py",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "port",
       "id": "port"
     },
@@ -918,7 +968,7 @@
       "source_file": "tests/unit/test_graph_validator.py",
       "source_location": "L9",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "node",
       "id": "node"
     },
@@ -938,7 +988,7 @@
       "source_file": "tests/unit/test_graph_validator.py",
       "source_location": "L13",
       "_origin": "ast",
-      "community": 56,
+      "community": 60,
       "norm_label": "portdirection",
       "id": "portdirection"
     },
@@ -968,7 +1018,7 @@
       "source_file": "tests/unit/test_graph_validator.py",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "edge",
       "id": "edge"
     },
@@ -1248,7 +1298,7 @@
       "source_file": "src/neuroforge/graph/serializer.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 56,
+      "community": 60,
       "norm_label": "serializer.py",
       "id": "graph_serializer"
     },
@@ -1818,7 +1868,7 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 56,
+      "community": 60,
       "norm_label": "model.py",
       "id": "graph_model"
     },
@@ -1828,7 +1878,7 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L14",
       "_origin": "ast",
-      "community": 56,
+      "community": 60,
       "norm_label": "portdirection",
       "id": "graph_model_portdirection"
     },
@@ -1838,7 +1888,7 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "community": 56,
+      "community": 60,
       "norm_label": "enum",
       "id": "enum"
     },
@@ -1848,7 +1898,7 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 56,
+      "community": 60,
       "norm_label": "datatype",
       "id": "graph_model_datatype"
     },
@@ -1858,7 +1908,7 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L32",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "port",
       "id": "graph_model_port"
     },
@@ -2008,7 +2058,7 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 56,
+      "community": 60,
       "norm_label": "direction of a port on a node.",
       "id": "graph_model_rationale_15"
     },
@@ -2018,7 +2068,7 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L22",
       "_origin": "ast",
-      "community": 56,
+      "community": 60,
       "norm_label": "data type flowing through a port connection.",
       "id": "graph_model_rationale_22"
     },
@@ -2028,7 +2078,7 @@
       "source_file": "src/neuroforge/graph/model.py",
       "source_location": "L33",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "a typed connection point on a node.      attributes:         id: unique identifi",
       "id": "graph_model_rationale_33"
     },
@@ -2481,36 +2531,6 @@
       "community": 52,
       "norm_label": "test_port_stores_all_fields()",
       "id": "unit_test_graph_model_test_port_stores_all_fields"
-    },
-    {
-      "label": "CHANGELOG.md",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 55,
-      "norm_label": "changelog.md",
-      "id": "changelog"
-    },
-    {
-      "label": "v0.2.0 (2026-06-17)",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L1",
-      "_origin": "ast",
-      "community": 55,
-      "norm_label": "v0.2.0 (2026-06-17)",
-      "id": "changelog_v0_2_0_2026_06_17"
-    },
-    {
-      "label": "Feat",
-      "file_type": "document",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L3",
-      "_origin": "ast",
-      "community": 55,
-      "norm_label": "feat",
-      "id": "changelog_feat"
     },
     {
       "label": "core.md",
@@ -3448,7 +3468,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": "components.py",
       "id": "graph_components"
     },
@@ -3458,7 +3478,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": "componentdefinition",
       "id": "graph_components_componentdefinition"
     },
@@ -3468,7 +3488,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L18",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": "componentlibrary",
       "id": "graph_components_componentlibrary"
     },
@@ -3478,7 +3498,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L19",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": ".register()",
       "id": "graph_components_componentlibrary_register"
     },
@@ -3488,7 +3508,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L21",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": ".get()",
       "id": "graph_components_componentlibrary_get"
     },
@@ -3498,7 +3518,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L23",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": ".all()",
       "id": "graph_components_componentlibrary_all"
     },
@@ -3508,7 +3528,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L25",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": ".remove()",
       "id": "graph_components_componentlibrary_remove"
     },
@@ -3518,7 +3538,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": ".create_from_selection()",
       "id": "graph_components_componentlibrary_create_from_selection"
     },
@@ -3528,7 +3548,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": "graph",
       "id": "src_neuroforge_graph_components_py_graph"
     },
@@ -3538,7 +3558,7 @@
       "source_file": "src/neuroforge/graph/components.py",
       "source_location": "L27",
       "_origin": "ast",
-      "community": 60,
+      "community": 52,
       "norm_label": "nodeid",
       "id": "src_neuroforge_graph_components_py_nodeid"
     },
@@ -3588,7 +3608,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": ".__init__()",
       "id": "graph_editor_items_portitem_init"
     },
@@ -3598,7 +3618,7 @@
       "source_file": "src/neuroforge/ui/graph_editor/items.py",
       "source_location": "L26",
       "_origin": "ast",
-      "community": 37,
+      "community": 60,
       "norm_label": "qgraphicsitem",
       "id": "qgraphicsitem"
     },
@@ -7536,6 +7556,56 @@
   ],
   "links": [
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "changelog",
+      "target": "changelog_v0_2_0_2026_06_17"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "changelog",
+      "target": "changelog_v0_3_0_2026_06_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "changelog_v0_3_0_2026_06_17",
+      "target": "changelog_feat",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "changelog_v0_2_0_2026_06_17",
+      "target": "changelog_feat"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "CHANGELOG.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "changelog_v0_2_0_2026_06_17",
+      "target": "changelog_feat_12",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -7614,9 +7684,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry",
-      "target": "graph_registry_tensor_in",
-      "confidence_score": 1.0
+      "target": "graph_registry_tensor_in"
     },
     {
       "relation": "contains",
@@ -7624,9 +7694,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry",
-      "target": "graph_registry_tensor_out",
-      "confidence_score": 1.0
+      "target": "graph_registry_tensor_out"
     },
     {
       "relation": "uses",
@@ -7654,9 +7724,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_11",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 1.0
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "references",
@@ -7665,9 +7735,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_tensor_in",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 1.0
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "references",
@@ -7676,9 +7746,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_tensor_out",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 1.0
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "uses",
@@ -7686,9 +7756,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "nodedefinition",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "calls",
@@ -7707,9 +7777,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "uses",
@@ -7717,9 +7787,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistryall",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "uses",
@@ -7727,9 +7797,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistrybycategory",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "uses",
@@ -7737,9 +7807,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistrycategories",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "uses",
@@ -7747,9 +7817,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistryregisterandget",
-      "target": "graph_registry_portdefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_portdefinition"
     },
     {
       "relation": "calls",
@@ -7758,9 +7828,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_build_default_registry",
-      "target": "graph_registry_nodedefinition",
-      "confidence_score": 1.0
+      "target": "graph_registry_nodedefinition"
     },
     {
       "relation": "uses",
@@ -7832,9 +7902,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_31",
-      "target": "graph_registry_nodedefinition",
-      "confidence_score": 1.0
+      "target": "graph_registry_nodedefinition"
     },
     {
       "relation": "uses",
@@ -7842,9 +7912,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "nodedefinition",
-      "target": "graph_registry_nodedefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_nodedefinition"
     },
     {
       "relation": "uses",
@@ -7852,9 +7922,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "graph_registry_nodedefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_nodedefinition"
     },
     {
       "relation": "uses",
@@ -7862,9 +7932,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistryall",
-      "target": "graph_registry_nodedefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_nodedefinition"
     },
     {
       "relation": "uses",
@@ -7872,9 +7942,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistrybycategory",
-      "target": "graph_registry_nodedefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_nodedefinition"
     },
     {
       "relation": "uses",
@@ -7882,9 +7952,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistrycategories",
-      "target": "graph_registry_nodedefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_nodedefinition"
     },
     {
       "relation": "uses",
@@ -7892,9 +7962,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistryregisterandget",
-      "target": "graph_registry_nodedefinition",
-      "confidence_score": 0.5
+      "target": "graph_registry_nodedefinition"
     },
     {
       "relation": "references",
@@ -7973,9 +8043,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_noderegistry",
-      "target": "graph_registry_noderegistry_init",
-      "confidence_score": 1.0
+      "target": "graph_registry_noderegistry_init"
     },
     {
       "relation": "method",
@@ -7993,9 +8063,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_54",
-      "target": "graph_registry_noderegistry",
-      "confidence_score": 1.0
+      "target": "graph_registry_noderegistry"
     },
     {
       "relation": "uses",
@@ -8003,9 +8073,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "nodedefinition",
-      "target": "graph_registry_noderegistry",
-      "confidence_score": 0.5
+      "target": "graph_registry_noderegistry"
     },
     {
       "relation": "uses",
@@ -8013,9 +8083,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "graph_registry_noderegistry",
-      "confidence_score": 0.5
+      "target": "graph_registry_noderegistry"
     },
     {
       "relation": "uses",
@@ -8023,9 +8093,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistryall",
-      "target": "graph_registry_noderegistry",
-      "confidence_score": 0.5
+      "target": "graph_registry_noderegistry"
     },
     {
       "relation": "calls",
@@ -8055,9 +8125,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistrybycategory",
-      "target": "graph_registry_noderegistry",
-      "confidence_score": 0.5
+      "target": "graph_registry_noderegistry"
     },
     {
       "relation": "calls",
@@ -8087,9 +8157,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistrycategories",
-      "target": "graph_registry_noderegistry",
-      "confidence_score": 0.5
+      "target": "graph_registry_noderegistry"
     },
     {
       "relation": "calls",
@@ -8130,9 +8200,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L6",
       "weight": 0.8,
+      "confidence_score": 0.5,
       "source": "unit_test_node_registry_testnoderegistryregisterandget",
-      "target": "graph_registry_noderegistry",
-      "confidence_score": 0.5
+      "target": "graph_registry_noderegistry"
     },
     {
       "relation": "calls",
@@ -8185,9 +8255,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_build_default_registry",
-      "target": "graph_registry_noderegistry_register",
-      "confidence_score": 1.0
+      "target": "graph_registry_noderegistry_register"
     },
     {
       "relation": "rationale_for",
@@ -8195,9 +8265,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_65",
-      "target": "graph_registry_noderegistry_register",
-      "confidence_score": 1.0
+      "target": "graph_registry_noderegistry_register"
     },
     {
       "relation": "rationale_for",
@@ -8205,9 +8275,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_79",
-      "target": "graph_registry_noderegistry_get",
-      "confidence_score": 1.0
+      "target": "graph_registry_noderegistry_get"
     },
     {
       "relation": "rationale_for",
@@ -8215,9 +8285,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L94",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_94",
-      "target": "graph_registry_noderegistry_all",
-      "confidence_score": 1.0
+      "target": "graph_registry_noderegistry_all"
     },
     {
       "relation": "rationale_for",
@@ -8225,9 +8295,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_98",
-      "target": "graph_registry_noderegistry_categories",
-      "confidence_score": 1.0
+      "target": "graph_registry_noderegistry_categories"
     },
     {
       "relation": "rationale_for",
@@ -8235,9 +8305,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_102",
-      "target": "graph_registry_noderegistry_by_category",
-      "confidence_score": 1.0
+      "target": "graph_registry_noderegistry_by_category"
     },
     {
       "relation": "calls",
@@ -8246,9 +8316,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_build_default_registry",
-      "target": "graph_registry_tensor_in",
-      "confidence_score": 1.0
+      "target": "graph_registry_tensor_in"
     },
     {
       "relation": "calls",
@@ -8257,9 +8327,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_build_default_registry",
-      "target": "graph_registry_tensor_out",
-      "confidence_score": 1.0
+      "target": "graph_registry_tensor_out"
     },
     {
       "relation": "rationale_for",
@@ -8267,9 +8337,9 @@
       "source_file": "src/neuroforge/graph/registry.py",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "graph_registry_rationale_122",
-      "target": "graph_registry_build_default_registry",
-      "confidence_score": 1.0
+      "target": "graph_registry_build_default_registry"
     },
     {
       "relation": "calls",
@@ -8288,9 +8358,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "contains",
@@ -8298,9 +8368,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry"
     },
     {
       "relation": "contains",
@@ -8308,9 +8378,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry",
-      "target": "unit_test_node_registry_testnoderegistryall",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistryall"
     },
     {
       "relation": "contains",
@@ -8318,9 +8388,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry",
-      "target": "unit_test_node_registry_testnoderegistrybycategory",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistrybycategory"
     },
     {
       "relation": "contains",
@@ -8328,9 +8398,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry",
-      "target": "unit_test_node_registry_testnoderegistrycategories",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistrycategories"
     },
     {
       "relation": "contains",
@@ -8338,9 +8408,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry",
-      "target": "unit_test_node_registry_testnoderegistryregisterandget",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistryregisterandget"
     },
     {
       "relation": "references",
@@ -8349,9 +8419,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_make_definition",
-      "target": "nodedefinition",
-      "confidence_score": 1.0
+      "target": "nodedefinition"
     },
     {
       "relation": "calls",
@@ -8360,9 +8430,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryall_test_all_returns_all_registered_definitions",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "calls",
@@ -8371,9 +8441,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_empty_for_unknown_category",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "calls",
@@ -8382,9 +8452,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L136",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_matching_nodes",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "calls",
@@ -8393,9 +8463,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrycategories_test_categories_are_unique",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "calls",
@@ -8404,9 +8474,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L128",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_all_present_categories",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "calls",
@@ -8415,9 +8485,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryregisterandget_test_multiple_definitions_are_independent",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "calls",
@@ -8426,9 +8496,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryregisterandget_test_register_duplicate_type_raises",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "calls",
@@ -8437,9 +8507,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L74",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryregisterandget_test_registered_definition_is_retrievable",
-      "target": "unit_test_node_registry_make_definition",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_make_definition"
     },
     {
       "relation": "method",
@@ -8447,9 +8517,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L78",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryregisterandget",
-      "target": "unit_test_node_registry_testnoderegistryregisterandget_test_get_unknown_type_raises_key_error",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistryregisterandget_test_get_unknown_type_raises_key_error"
     },
     {
       "relation": "method",
@@ -8457,9 +8527,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryregisterandget",
-      "target": "unit_test_node_registry_testnoderegistryregisterandget_test_multiple_definitions_are_independent",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistryregisterandget_test_multiple_definitions_are_independent"
     },
     {
       "relation": "method",
@@ -8467,9 +8537,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryregisterandget",
-      "target": "unit_test_node_registry_testnoderegistryregisterandget_test_register_duplicate_type_raises",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistryregisterandget_test_register_duplicate_type_raises"
     },
     {
       "relation": "method",
@@ -8477,9 +8547,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryregisterandget",
-      "target": "unit_test_node_registry_testnoderegistryregisterandget_test_registered_definition_is_retrievable",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistryregisterandget_test_registered_definition_is_retrievable"
     },
     {
       "relation": "method",
@@ -8487,9 +8557,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryall",
-      "target": "unit_test_node_registry_testnoderegistryall_test_all_returns_all_registered_definitions",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistryall_test_all_returns_all_registered_definitions"
     },
     {
       "relation": "method",
@@ -8497,9 +8567,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistryall",
-      "target": "unit_test_node_registry_testnoderegistryall_test_all_returns_empty_when_nothing_registered",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistryall_test_all_returns_empty_when_nothing_registered"
     },
     {
       "relation": "method",
@@ -8507,9 +8577,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrycategories",
-      "target": "unit_test_node_registry_testnoderegistrycategories_test_categories_are_unique",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistrycategories_test_categories_are_unique"
     },
     {
       "relation": "method",
@@ -8517,9 +8587,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrycategories",
-      "target": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_all_present_categories",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_all_present_categories"
     },
     {
       "relation": "method",
@@ -8527,9 +8597,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrycategories",
-      "target": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_empty_when_nothing_registered",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistrycategories_test_categories_returns_empty_when_nothing_registered"
     },
     {
       "relation": "method",
@@ -8537,9 +8607,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrybycategory",
-      "target": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_empty_for_unknown_category",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_empty_for_unknown_category"
     },
     {
       "relation": "method",
@@ -8547,9 +8617,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testnoderegistrybycategory",
-      "target": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_matching_nodes",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testnoderegistrybycategory_test_by_category_returns_matching_nodes"
     },
     {
       "relation": "method",
@@ -8557,9 +8627,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_setup_method",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_setup_method"
     },
     {
       "relation": "method",
@@ -8567,9 +8637,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_all_expected_categories_are_present",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_all_expected_categories_are_present"
     },
     {
       "relation": "method",
@@ -8577,9 +8647,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_all_expected_types_are_registered",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_all_expected_types_are_registered"
     },
     {
       "relation": "method",
@@ -8587,9 +8657,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L211",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_all_tensor_ports_have_tensor_data_type",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_all_tensor_ports_have_tensor_data_type"
     },
     {
       "relation": "method",
@@ -8597,9 +8667,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L201",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_conv2d_has_expected_params",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_conv2d_has_expected_params"
     },
     {
       "relation": "method",
@@ -8607,9 +8677,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L178",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_default_params_is_dict",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_default_params_is_dict"
     },
     {
       "relation": "method",
@@ -8617,9 +8687,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L207",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_dropout_has_p_param",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_dropout_has_p_param"
     },
     {
       "relation": "method",
@@ -8627,9 +8697,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_every_node_has_at_least_one_port",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_every_node_has_at_least_one_port"
     },
     {
       "relation": "method",
@@ -8637,9 +8707,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L188",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_input_node_has_output_port",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_input_node_has_output_port"
     },
     {
       "relation": "method",
@@ -8647,9 +8717,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L196",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_linear_has_expected_params",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_linear_has_expected_params"
     },
     {
       "relation": "method",
@@ -8657,9 +8727,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L170",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_no_duplicate_types",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_no_duplicate_types"
     },
     {
       "relation": "method",
@@ -8667,9 +8737,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_output_node_has_input_port",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_output_node_has_input_port"
     },
     {
       "relation": "method",
@@ -8677,9 +8747,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L184",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_param_schema_is_dict",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_param_schema_is_dict"
     },
     {
       "relation": "method",
@@ -8687,9 +8757,9 @@
       "source_file": "tests/unit/test_node_registry.py",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "unit_test_node_registry_testbuilddefaultregistry",
-      "target": "unit_test_node_registry_testbuilddefaultregistry_test_returns_node_registry",
-      "confidence_score": 1.0
+      "target": "unit_test_node_registry_testbuilddefaultregistry_test_returns_node_registry"
     },
     {
       "relation": "imports_from",
@@ -15265,26 +15335,6 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L1",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "changelog",
-      "target": "changelog_v0_2_0_2026_06_17"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "CHANGELOG.md",
-      "source_location": "L3",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "changelog_v0_2_0_2026_06_17",
-      "target": "changelog_feat"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
       "source_file": "docs/api/core.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -20854,5 +20904,5 @@
       "source_file": "docs/dev/phase1_project_graph.md"
     }
   ],
-  "built_at_commit": "b8aad3cdc240c317c96a6811b769b34edc9aa297"
+  "built_at_commit": "bfb0f1ea835b3a809770f76facb3f5d1246c0ce3"
 }

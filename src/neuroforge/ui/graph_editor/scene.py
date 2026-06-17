@@ -32,6 +32,9 @@ class GraphScene(QGraphicsScene):
     edge_removed: Signal = Signal(str)
     node_double_clicked: Signal = Signal(str)
     selection_updated: Signal = Signal(list)
+    connection_requested: Signal = Signal(
+        str, str, str, str
+    )  # src_node, src_port, dst_node, dst_port
 
     def __init__(self, graph: Graph) -> None:
         """Create the scene and populate it from *graph*.
@@ -43,6 +46,8 @@ class GraphScene(QGraphicsScene):
         self._node_items: dict[NodeId, NodeItem] = {}
         self._edge_items: dict[EdgeId, EdgeItem] = {}
         self._edge_draft: EdgeDraftItem | None = None
+        self._draft_src_node_id: NodeId | None = None
+        self._draft_src_port_id: str | None = None
         self.selectionChanged.connect(self._on_selection_changed)
         self.load_graph(graph)
 
@@ -74,7 +79,7 @@ class GraphScene(QGraphicsScene):
         self.node_added.emit(node.id)
 
     def remove_node_item(self, node_id: NodeId) -> None:
-        """Remove the `NodeItem` for *node_id* and emit `node_removed`.
+        """Remove the `NodeItem` for *node_id* and its connected edges, then emit `node_removed`.
 
         Args:
             node_id: ID of the node to remove.
@@ -82,6 +87,13 @@ class GraphScene(QGraphicsScene):
         Raises:
             KeyError: If no item exists for *node_id*.
         """
+        connected = [
+            eid
+            for eid, ei in self._edge_items.items()
+            if ei._edge.src_node == node_id or ei._edge.dst_node == node_id
+        ]
+        for eid in connected:
+            self.remove_edge_item(eid)
         item = self._node_items.pop(node_id)
         self.removeItem(item)
         self.node_removed.emit(node_id)
@@ -126,6 +138,8 @@ class GraphScene(QGraphicsScene):
             self.cancel_edge_draft()
         src_pos = self._node_items[src_node_id].port_center(src_port_id)
         self._edge_draft = EdgeDraftItem(src_pos)
+        self._draft_src_node_id = src_node_id
+        self._draft_src_port_id = src_port_id
         self.addItem(self._edge_draft)
 
     def cancel_edge_draft(self) -> None:
@@ -133,6 +147,27 @@ class GraphScene(QGraphicsScene):
         if self._edge_draft is not None:
             self.removeItem(self._edge_draft)
             self._edge_draft = None
+            self._draft_src_node_id = None
+            self._draft_src_port_id = None
+
+    def complete_edge_draft(self, dst_node_id: NodeId, dst_port_id: str) -> None:
+        """Finalise a draft edge by creating a real `EdgeItem`.
+
+        Called when the user releases the mouse over a destination port.
+        The draft is removed and a new edge is added via `add_edge_item`.
+
+        Args:
+            dst_node_id: ID of the destination node.
+            dst_port_id: ID of the destination port on that node.
+        """
+        if self._edge_draft is None:
+            return
+        src_node_id = self._draft_src_node_id
+        src_port_id = self._draft_src_port_id
+        self.cancel_edge_draft()
+        if src_node_id is None or src_port_id is None:
+            return
+        self.connection_requested.emit(src_node_id, src_port_id, dst_node_id, dst_port_id)
 
     def selected_node_ids(self) -> list[NodeId]:
         """Return the IDs of all currently selected nodes."""

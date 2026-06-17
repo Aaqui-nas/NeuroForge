@@ -340,8 +340,8 @@
     "semantic_hash": ""
   },
   "CHANGELOG.md": {
-    "mtime": 1781723594.7261815,
-    "ast_hash": "4e48fd14f3b56e42f9ee92e286890758",
+    "mtime": 1781731449.663171,
+    "ast_hash": "25d8ce702db1d76826fd26b1079f431c",
     "semantic_hash": ""
   },
   "tests/unit/test_graph_model.py": {
